@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+nav {
+  background-color: #4B0082;
+  padding: 25x;
+  color: #FFFFFF;
+  height: 75px;
+}
+
+Link {
+  color: #FFFFFF
+}
+
+form {
+  
+}
