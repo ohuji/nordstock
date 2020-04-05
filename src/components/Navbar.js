@@ -8,16 +8,19 @@ import App from "../App";
             <nav className="navbar">
 
                 <a className="navbar-brand offset-1">
-                  <Link to="/">Logo</Link></a>   
+                  <Link to="/" className="text-white">
+                    Logo
+                  </Link>
+                </a>   
 
                 <div className="row">
-                  <button className="btn  nav-item ">
+                  <button className="btn nav-item ">
                     <Link to="/login" >
                      Kirjaudu sisään
                      </Link>
                   </button>
                   
-                  <button className="btn  nav-item ">
+                  <button className="btn nav-item ">
                     <Link to="/register">
                      Avaa tili
                      </Link>

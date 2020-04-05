@@ -21,8 +21,8 @@ class App extends Component {
    
    <Route exact path="/" component={Main}/>
    <Route path="/cart" component={Cart}/>
-   <Route path="/sign in" component={Login}/>
-   <Route path="/sign up" component={Register}/>
+   <Route path="/login" component={Login}/>
+   <Route path="/register" component={Register}/>
    
  </BrowserRouter>
     </div>

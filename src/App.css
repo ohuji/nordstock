@@ -106,3 +106,7 @@ Link {
   margin-top: 0px;
   font-weight: bolder;
 }
+
+.LoginCard {
+  width: 30rem;
+}

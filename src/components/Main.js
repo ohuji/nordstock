@@ -29,7 +29,7 @@ class Main extends Component {
               </p>
 
               <button className="btn btn-lg btn-primary Button ">
-                  <Link to="/register">
+                  <Link to="/register" className="text-white">
                       Avaa ilmainen tili
                   </Link>
               </button>
