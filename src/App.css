@@ -50,7 +50,7 @@ Link {
 
 .img {
   width: 100%;
-  height: 700px;
+  height: 800px;
   position: relative;
 }
 
@@ -64,26 +64,26 @@ Link {
   top: 20%;
   left: 0;
   width: 100%;
-  color: #6495ED;
+  color: #FFFF;
 }
 
 .Paragraph {
   position: absolute;
-  top: 37%;
+  top: 42%;
   left: 630px;
   width: 35%;
   font-size: 25px;
-  color: #6495ED;
+  color: #FFFF;
 }
 
 .Button {
   position: absolute;
-  top: 55%;
+  top: 62%;
   left: 835px;
   width: 15%;
   font-size: 25px;
   color: #FFFF;
-  background-color: #FFFFFF;
+  background-color: #6495ED;
 }
 
 .card-body {

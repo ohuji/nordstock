@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "./../App.css";
-import Image from "./../chris-li-6Y6OnwBKk-o-unsplash.png";
+import Image from "./../nystock.png";
 import Imagetwo from "./../2018f.png";
 import Imagethree from "./../btcpic.png";
 import Imagefour from "./../best_investment_broker.png";
@@ -96,7 +96,7 @@ class Main extends Component {
             </div>
 
            <div className="container-fluid">
-              <div className="row">
+              <div className="row mb-4">
                 <div className="card offset-md-1">
 
                <img className="card-img-top image-fluid" src={Imagetwo}></img>
