@@ -1,8 +1,12 @@
 const mysql = require("mysql");
 const express = require("express");
+const bcrypt = require("bcrypt");
+const bodyParser = require("body-parser");
 
 const app = express();
 const port = 5000;
+
+app.use(bodyParser.json());
 
 const connection = mysql.createConnection({
     host: "localhost",
@@ -19,16 +23,18 @@ connection.connect(function(error){
     }      
 })
 
-app.get("/search", function(require, response){
-    connection.query("SELECT * FROM technology UNION SELECT * FROM home", function(error, results){
-    if(error) {
-        response.send(error);
-    } else {
-        return response.json({
-            data: results
-        })
-    }
-   });
+app.post("/register", (req, response) => {
+  const username = req.body.username;
+  const password = req.body.password;
+  const email = req.body.email;
+
+  bcrypt.hash(password, 10, (err, hash) => {
+    connection.query("INSERT INTO users (username, password, email) VALUES (?,?,?)", 
+    [username, password, email], (error, results, fields) => {
+      if (error) throw error;
+      response.end(JSON.stringify(results));
+    })
+  });
 })
 
 app.listen(port, () => console.log("portti 5000 toimii!"));

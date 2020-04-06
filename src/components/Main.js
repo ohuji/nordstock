@@ -14,9 +14,9 @@ class Main extends Component {
     render(){
      return(
 
-      <div>
-       <Navbar/>
-              <div>
+          <div>
+            <Navbar/>
+           <div>
             <img src={Image} className="image-fluid img"></img>
 
               <h1 className="font font-weight-bold Header display-2">

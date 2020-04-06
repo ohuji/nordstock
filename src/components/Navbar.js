@@ -7,11 +7,11 @@ import App from "../App";
         return(
             <nav className="navbar">
 
-                <a className="navbar-brand offset-1">
+                <div className="navbar-brand offset-1">
                   <Link to="/" className="text-white">
                     Logo
                   </Link>
-                </a>   
+                </div>   
 
                 <div className="row">
                   <button className="btn nav-item ">
