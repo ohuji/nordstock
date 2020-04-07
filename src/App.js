@@ -8,6 +8,7 @@ import Main from "./components/Main"
 import Login from "./components/Login"
 import Register from "./components/Register"
 import Home from "./components/Home";
+import Apple from "./components/Apple";
 
 class App extends Component {
  
@@ -23,6 +24,7 @@ class App extends Component {
    <Route path="/login" component={Login}/>
    <Route path="/register" component={Register}/>
    <Route path="/Home" component={Home}/>
+   <Route path="/Apple" component={Apple}/>
    
  </BrowserRouter>
     </div>
