@@ -1,7 +1,14 @@
 import React, { Component } from "react";
-import Plot from "react-plotly.js";
+import Plotly from "plotly.js-basic-dist";
+import createPlotlyComponent from "react-plotly.js/factory";
+import Footer from "./Footer";
+import Navbartwo from "./Navbartwo";
+import Categories from "./Categories";
+import { Link } from "react-router-dom";
+const Plot = createPlotlyComponent(Plotly);
 
 class Apple extends Component {
+
     state = {
         Xaxis: [],
         Yaxis: []
@@ -19,11 +26,10 @@ class Apple extends Component {
         let Xvalue = [];
 
        fetch("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=AAPL&interval=1min&apikey=WF9H64N6MXWBW9AJ")
-       .then(function(response) {
+       .then(response => {
            return response.json();
        })
-       .then(
-           function(data) {
+       .then(data => {
                console.log(data)
 
                for (let key in data["Time Series (Daily)"]) {
@@ -38,8 +44,7 @@ class Apple extends Component {
 
            }
        )
-       .catch(
-           function(error){
+       .catch(error => {
                console.log(error)
            }
        )
@@ -49,22 +54,33 @@ class Apple extends Component {
       const { Xaxis, Yaxis } = this.state
       console.log(this.state)
         return(
-         <div>
-            <Plot data={[ {
-                x: Xaxis,
-                y: Yaxis,
-                type: "scatter",
-                mode: "lines+markers",
-                marker: {color: "red"},
-            }
-            ]}
-            layout={{width: 720, height: 440, title: "Apple osake"}}/>
 
-             
+         <div>     
+           <Navbartwo />
+         <div className="container-fluid">
+
+           <h1 className="mt-4">Apple osake (AAPL)</h1>
+            <div className="row">
+
+            <Categories/>
+
+             <Plot
+             className="mb-4"
+             data={[{
+             x: Xaxis,
+             y: Yaxis,
+             type: 'scatter',
+             mode: 'lines+markers',
+             marker: {color: 'blue'},
+           },
+         ]}
+          layout={ {width: 950, height: 706} }/>    
+          </div>
          </div>
+          <Footer />            
+        </div>
         )
     }
-
 }
 
 export default Apple;

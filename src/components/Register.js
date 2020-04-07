@@ -8,11 +8,11 @@ class Register extends Component {
       users: []
     }
    
-    handleChange = e => {
+    handleChange = (e) => {
       this.setState({ [e.target.id]: e.target.value })
     }
 
-    handleSubmit = e => {
+    handleSubmit = (e) => {
       e.prevent.default()
 
       fetch("/register", {
@@ -26,9 +26,15 @@ class Register extends Component {
         email: this.state.email   
       })
     })
-      .then(res => res.json())
-      .then(data => console.log(data))
-      .catch(error => console.log(error))
+      .then(response => {
+        return response.json();
+      }) 
+      .then(data =>{
+        console.log(data);
+      })
+      .catch(error => {
+        console.log(error);
+      })
     }
 
     render() {

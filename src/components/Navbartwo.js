@@ -19,7 +19,7 @@ const Navbartwo = () => {
             </button>
                   
             <button className="btn nav-item ">
-               <Link to="/register">
+               <Link to="/">
                   Kirjaudu ulos
                </Link>
             </button>
