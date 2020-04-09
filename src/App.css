@@ -110,3 +110,17 @@ Link {
 .LoginCard {
   width: 30rem;
 }
+
+.BuySellButtons {
+  margin-left: 25px;
+  margin-top: 30px;
+}
+
+.HomeCard {
+  width: 12rem;
+  margin-right: 50px;
+}
+
+.HomeList {
+  margin-right: 50px;
+}

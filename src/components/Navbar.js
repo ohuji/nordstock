@@ -5,28 +5,28 @@ import App from "../App";
 
  const Navbar = () => {        
         return(
-            <nav className="navbar">
+           <nav className="navbar">
 
-                <div className="navbar-brand offset-1">
-                  <Link to="/" className="text-white">
-                    Logo
-                  </Link>
-                </div>   
+             <div className="navbar-brand offset-1">
+                <Link to="/" className="text-white">
+                   Logo
+                 </Link>
+              </div>   
 
-                <div className="row">
-                  <button className="btn nav-item ">
-                    <Link to="/login" >
+              <div className="row">
+                <button className="btn nav-item ">
+                  <Link to="/login" >
                      Kirjaudu sisään
-                     </Link>
-                  </button>
+                   </Link>
+                 </button>
                   
                   <button className="btn nav-item ">
                     <Link to="/register">
                      Avaa tili
                      </Link>
                   </button>
-                  </div>
-            </nav>
+                </div>
+              </nav>
         )
       }
 

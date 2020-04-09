@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Categories = () => {
     return(
 
-      <ul className="list-group list-group-flush col-md-3">
+      <ul className="list-group HomeList list-group-flush col-md-3">
 
       <li className="list-group-item ">
         <Link to="/NYSE">
@@ -22,14 +22,14 @@ const Categories = () => {
 
       <li className="list-group-item">
         <Link to="/LSE">
-            London Stock Exhange (LSE)
+            Valuutat
         </Link>   
        <span className="badge badge-primary badge-pill">8</span>
       </li>
 
       <li className="list-group-item">
-        <Link to="/OMXHEL">
-            OMX: Helsinki (HEL)
+        <Link to="/SSE">
+            Sanghai Stock Exhange (SSE)
         </Link>   
        <span className="badge badge-primary badge-pill">5</span>
       </li>

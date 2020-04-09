@@ -5,7 +5,7 @@ const Navbartwo = () => {
   return(
     <nav className="navbar">
 
-        <div className="navbar-brand offset-6">
+        <div className="navbar-brand offset-2">
          <Link to="/home" className="text-white">
                Logo
          </Link>
