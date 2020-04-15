@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Categories = () => {
     return(
 
-      <ul className="list-group HomeList list-group-flush col-md-3">
+      <ul className="list-group HomeList col-md-3">
 
       <li className="list-group-item ">
         <Link to="/NYSE">

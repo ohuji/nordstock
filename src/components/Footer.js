@@ -7,7 +7,7 @@ const Footer = () => {
        <footer className="site-footer">
         <div className="container-fluid">
           <div className="col-md-7">
-           <div className="">Copyright © 2020, Nordshop Inc, All Rights Reserved</div>
+           <div>Copyright © 2020, Nordshop Inc, All Rights Reserved</div>
          </div>
         </div>
       </footer>
