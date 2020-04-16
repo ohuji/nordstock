@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import Footer from "./Footer";
 import "./../App.css";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 class Login extends Component {
     render(){
     return(
-    <div>
+    <div className="background">
+      <Navbar/>
         <div className="container mt-5">
         <div className="card LoginCard offset-md-3">
           <div className="card-body LoginCard">

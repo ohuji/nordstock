@@ -16,7 +16,7 @@ class SpyNav extends Component {
 
         let stockValue = [];
 
-        fetch("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=SPY&apikey=WF9H64N6MXWBW9AJ")
+        fetch("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=SPY&apikey=Z6HATD4T6MQOJOPS")
         .then(response => {
             return response.json();
         })

@@ -1,51 +1,58 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./../App.css";
 
 const Categories = () => {
     return(
 
-      <ul className="list-group HomeList col-md-3">
+      <ul className="list-group HomeList list-group-horizontal">
 
-      <li className="list-group-item ">
+      <li className="list-group-item">
         <Link to="/NYSE">
-            New York Stock Exhange (NYSE)
+            <h5 className="PercentageNavText">
+              New York Stock Exhange (NYSE)
+            </h5>
         </Link>   
-       <span className="badge badge-primary badge-pill">10</span>
       </li>
 
       <li className="list-group-item">
         <Link to="/Nasdaq">
+        <h5 className="PercentageNavText">
             Nasdaq
+        </h5>
         </Link>   
-       <span className="badge badge-primary badge-pill">12</span>
       </li>
 
       <li className="list-group-item">
-        <Link to="/LSE">
+        <Link to="/Currencies">
+        <h5 className="PercentageNavText">
             Valuutat
+        </h5>
         </Link>   
-       <span className="badge badge-primary badge-pill">8</span>
       </li>
 
       <li className="list-group-item">
         <Link to="/SSE">
+        <h5 className="PercentageNavText">
             Sanghai Stock Exhange (SSE)
+        </h5>
         </Link>   
-       <span className="badge badge-primary badge-pill">5</span>
       </li>
 
       <li className="list-group-item">
         <Link to="/ETF">
-            ETF:ät
+        <h5 className="PercentageNavText">
+            Exhange-Traded Funds (ETF)
+        </h5>
         </Link>   
-       <span className="badge badge-primary badge-pill">7</span>
       </li>
 
       <li className="list-group-item">
         <Link to="/Crypto">
+        <h5 className="PercentageNavText">
             Cryptovaluutat
+        </h5>
         </Link>   
-       <span className="badge badge-primary badge-pill">5</span>
       </li>
 
     </ul>

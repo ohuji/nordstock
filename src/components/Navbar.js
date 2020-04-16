@@ -2,6 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import Routes from "./Routes";
 import App from "../App";
+import "./../App.css"
 
  const Navbar = () => {        
         return(
@@ -14,15 +15,19 @@ import App from "../App";
               </div>   
 
               <div className="row">
-                <button className="btn nav-item ">
-                  <Link to="/login" >
+                <button className="btn nav-item">
+                  <Link 
+                  to="/login"
+                  className="PercentageNavText">
                      Kirjaudu sisään
-                   </Link>
+                  </Link>
                  </button>
                   
                   <button className="btn nav-item ">
-                    <Link to="/register">
-                     Avaa tili
+                    <Link 
+                    to="/register"
+                    className="PercentageNavText">
+                      Avaa tili
                      </Link>
                   </button>
                 </div>

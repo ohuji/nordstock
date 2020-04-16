@@ -14,7 +14,7 @@ class Main extends Component {
     render(){
      return(
 
-          <div>
+          <div className="background">
             <Navbar/>
            <div>
             <img src={Image} className="image-fluid img"></img>

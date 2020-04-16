@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./../App.css";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 class Register extends Component {
     state = {
@@ -39,7 +40,8 @@ class Register extends Component {
 
     render() {
      return(
-       <div>
+       <div className="background">
+         <Navbar/>
           <div className="container mt-5 mb-5">
            <div className="card LoginCard offset-md-3">
             <div className="card-body LoginCard">

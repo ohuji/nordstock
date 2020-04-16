@@ -18,15 +18,15 @@ import PercentageList from "./PercentageList";
 
 const Home = () => {
     return(
-        <div>
+        <div className="background">
          <Navbartwo/>
+         <Categories />
          <PercentageList />        
           <div className="container-fluid">
           
            <h3 className="mt-5 mb-3">Suositut kohteessa: Osakkeet</h3>
 
-           <div className="row">
-             <Categories /> 
+           <div className="row offset-md-1"> 
                <div className="card HomeCard">
                 <Link to="/Apple">
 
@@ -111,9 +111,9 @@ const Home = () => {
                  </Link>
                 </div>
            </div>
-             <h3 className="mt-5 mb-3">Suositut kohteessa: ETF</h3>
+             <h3 className="mt-5 mb-3">Suositut kohteessa: Exhange-Traded Funds (ETF)</h3>
 
-             <div className="row">
+             <div className="row offset-md-1">
              <div className="card HomeCard">
                 <Link to="/SpyEtf">
 

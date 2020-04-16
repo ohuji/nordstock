@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./../App.css";
 
 const Navbartwo = () => {
   return(
@@ -13,13 +14,17 @@ const Navbartwo = () => {
 
          <div className="row">
             <button className="btn nav-item ">
-               <Link to="/login" >
+               <Link
+                to="/login"
+                className="PercentageNavText" >
                   Profiili
                </Link>
             </button>
                   
             <button className="btn nav-item ">
-               <Link to="/">
+               <Link
+                to="/"
+                className="PercentageNavText">
                   Kirjaudu ulos
                </Link>
             </button>
