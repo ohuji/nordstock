@@ -25,7 +25,7 @@ class Nyse extends Component {
     .then(response => {
       this.setState({ companies: response.data })
     })
-    
+
     .catch(error => {
       console.log(error)
     })
@@ -33,13 +33,13 @@ class Nyse extends Component {
 
   render() {
     const { companies } = this.state;
-    console.log(this.state);
+
     const companyList = companies.length ? (
       companies.map((company) => {
         return(   
               <li key={company.id} className="list-group-item list-group-item-action">
-                <Link to={"/"+company.short}>
-                 {company.name}
+                <Link to={"/"+company.short} className="PercentageNavText">
+                 {company.name+" ("+company.short+")"}
                 </Link>
               </li>
         )
@@ -55,10 +55,12 @@ class Nyse extends Component {
           <Categories />
           <PercentageList />
          <div className="container-fluid">    
-         <h1 className="offset-md-0 mt-5 mb-5">New York Stock Exhange (NYSE)</h1>   
+         <h1 className="offset-md-0 mt-5 mb-5">New York Stock Exhange (NYSE)</h1>  
+
           <div className="row">
             <img src={nyseLogo} className="image-fluid offset-md-1"></img>
-            <ul className="list-group col-md-4 offset-md-2">
+
+            <ul className="list-group col-md-4 offset-md-2 mb-5">
              {companyList}
            </ul>
           </div>

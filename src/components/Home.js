@@ -131,7 +131,7 @@ const Home = () => {
                 </div>
 
                 <div className="card HomeCard">
-                <Link to="/JPMorganChase">
+                <Link to="/JPM">
 
                 <img className="card-img-top image-fluid" src={JPMorganLogo}></img>
 
