@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="container-fluid">
           <div className="row">
           <div className="col-md-6">
-            <p>Copyright © 2020, Nordshop Inc, All Rights Reserved</p>
+            <p>Copyright © 2020, J.Salomäki, All Rights Reserved</p>
           </div>
           <a href="https://github.com/ohuji">
            <img src={GithubLogo} className="image-fluid"></img>

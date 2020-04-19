@@ -86,14 +86,6 @@ Link {
   background-color: #6495ED;
 }
 
-.card-body {
-   width: 18rem;
-}
-
-.card {
-  margin-top: 20px;
-}
-
 .TextOne {
   color: #000000;
   font-weight: bolder;
@@ -131,4 +123,8 @@ Link {
 
 .background {
   background-color: #F8F8F8;
+}
+
+.InfoCard {
+  width: 30rem;
 }

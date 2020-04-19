@@ -9,6 +9,7 @@ import Login from "./components/Login"
 import Register from "./components/Register"
 import Home from "./components/Home";
 import Apple from "./components/Apple";
+import Nyse from './components/Nyse';
 
 class App extends Component {
  
@@ -18,15 +19,16 @@ class App extends Component {
     <div className="App">
       
       
-      <BrowserRouter>
+   <BrowserRouter>
    
    <Route exact path="/" component={Main}/>
    <Route path="/login" component={Login}/>
    <Route path="/register" component={Register}/>
    <Route path="/Home" component={Home}/>
    <Route path="/Apple" component={Apple}/>
+   <Route path="/NYSE" component={Nyse}/>
    
- </BrowserRouter>
+  </BrowserRouter>
     </div>
   )
   }

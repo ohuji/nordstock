@@ -107,9 +107,6 @@ class Apple extends Component {
             <li className="list-group-item">
               <h6>Markkina arvo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.26 miljardia</h6>
             </li>
-            <li className="list-group-item">
-              <h6>Välityshinta:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; €0.005 per osake</h6>
-            </li>
           </ul>
          </div>
         </div>  
