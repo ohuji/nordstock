@@ -294,7 +294,7 @@ const Home = () => {
                <div className="row offset-md-1 mb-5">
                  
                <div className="card HomeCard">
-                <Link to="/Euro">
+                <Link to="/EUR">
 
                 <img className="card-img-top image-fluid" src={EuroLogo}></img>
 
@@ -308,7 +308,7 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/Btc">
+                <Link to="/BTC">
 
                 <img className="card-img-top image-fluid" src={BitcoinLogo}></img>
 
@@ -322,7 +322,7 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/Usd">
+                <Link to="/USD">
 
                 <img className="card-img-top image-fluid" src={UsdLogo}></img>
 
@@ -336,7 +336,7 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/Jpy">
+                <Link to="/JPY">
 
                 <img className="card-img-top image-fluid" src={JpyLogo}></img>
 
@@ -350,7 +350,7 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/Eth">
+                <Link to="/ETH">
 
                 <img className="card-img-top image-fluid" src={EthereumLogo}></img>
 
@@ -364,7 +364,7 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/Xrp">
+                <Link to="/XRP">
 
                 <img className="card-img-top image-fluid" src={RippleLogo}></img>
 
@@ -378,7 +378,7 @@ const Home = () => {
                </div>
                
                <div className="card HomeCard">
-                <Link to="/Gbp">
+                <Link to="/GBP">
 
                 <img className="card-img-top image-fluid" src={GbpLogo}></img>
 
