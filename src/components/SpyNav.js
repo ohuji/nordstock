@@ -46,7 +46,7 @@ class SpyNav extends Component {
             let increasedPercentage = increase / stockData[1] * 100;
 
             return(
-                <div className="list-group-item">
+                <div className="list-group-item rounded-0">
                  <Link to="/SpyEtf">
                   <h5 className="PercentageNavText">SPY S&P 500</h5>
                   </Link>
@@ -55,7 +55,7 @@ class SpyNav extends Component {
             )
         } else if (stockData[0] === stockData[1]) {        
             return(
-                <div className="list-group-item">
+                <div className="list-group-item rounded-0">
                  <Link to="SpyEtf"> 
                   <h5 className="PercentageNavText">SPY S&P 500</h5>
                   </Link>  
@@ -69,7 +69,7 @@ class SpyNav extends Component {
             let decreasedPercentage = decrease / stockData[0] * 100;
 
             return(
-                <div className="list-group-item">
+                <div className="list-group-item rounded-0">
                  <Link to="SpyEtf"> 
                   <h5 className="PercentageNavText">SPY S&P 500</h5>
                   </Link>  

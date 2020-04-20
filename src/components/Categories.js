@@ -7,7 +7,7 @@ const Categories = () => {
 
       <ul className="list-group HomeList list-group-horizontal">
 
-      <li className="list-group-item">
+      <li className="list-group-item rounded-0">
         <Link to="/NYSE">
             <h5 className="PercentageNavText">
               New York Stock Exhange (NYSE)
@@ -15,7 +15,7 @@ const Categories = () => {
         </Link>   
       </li>
 
-      <li className="list-group-item">
+      <li className="list-group-item rounded-0">
         <Link to="/Nasdaq">
         <h5 className="PercentageNavText">
             Nasdaq
@@ -23,7 +23,7 @@ const Categories = () => {
         </Link>   
       </li>
 
-      <li className="list-group-item">
+      <li className="list-group-item rounded-0">
         <Link to="/Currencies">
         <h5 className="PercentageNavText">
             Valuutat
@@ -31,7 +31,7 @@ const Categories = () => {
         </Link>   
       </li>
 
-      <li className="list-group-item">
+      <li className="list-group-item rounded-0">
         <Link to="/SSE">
         <h5 className="PercentageNavText">
             Sanghai Stock Exhange (SSE)
@@ -39,7 +39,7 @@ const Categories = () => {
         </Link>   
       </li>
 
-      <li className="list-group-item">
+      <li className="list-group-item rounded-0">
         <Link to="/ETF">
         <h5 className="PercentageNavText">
             Exhange-Traded Funds (ETF)
@@ -47,7 +47,7 @@ const Categories = () => {
         </Link>   
       </li>
 
-      <li className="list-group-item">
+      <li className="list-group-item rounded-0">
         <Link to="/Crypto">
         <h5 className="PercentageNavText">
             Cryptovaluutat

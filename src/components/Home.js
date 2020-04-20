@@ -89,7 +89,7 @@ const Home = () => {
 
            <div className="row offset-md-1"> 
                <div className="card HomeCard">
-                <Link to="/Apple">
+                <Link to="/AAPL">
 
                 <img className="card-img-top image-fluid" src={AppleLogo}></img>
 
@@ -103,7 +103,7 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/Amazon">
+                <Link to="/AMZN">
 
                 <img className="card-img-top image-fluid" src={AmazonLogo}></img>
 
@@ -145,7 +145,7 @@ const Home = () => {
                 </div>
 
                 <div className="card HomeCard">
-                <Link to="/Tesla">
+                <Link to="/TSLA">
 
                 <img className="card-img-top image-fluid" src={TeslaLogo}></img>
 
@@ -159,13 +159,13 @@ const Home = () => {
                 </div>
 
                 <div className="card HomeCard">
-                <Link to="/Alphabet">
+                <Link to="/GOOGL">
 
                 <img className="card-img-top image-fluid" src={AlphabetLogo}></img>
 
                 <div className="card-body HomeCard">
                  <h5 className="card-text PercentageNavText">
-                     Alphabet Inc (GOOG)
+                     Alphabet Inc (GOOGL)
                  </h5>           
                 </div>
 
@@ -173,7 +173,7 @@ const Home = () => {
                 </div>
 
                 <div className="card HomeCard">
-                <Link to="/Nvidia">
+                <Link to="/NVDA">
 
                 <img className="card-img-top image-fluid" src={NvidiaLogo}></img>
 

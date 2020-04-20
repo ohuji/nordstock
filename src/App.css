@@ -128,3 +128,18 @@ Link {
 .InfoCard {
   width: 30rem;
 }
+
+.site-footer{
+  background-color: #101010;
+  color: #FFFFFF;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.FooterParagraph {
+  color: #FFFFFFFF;
+  font-size: 15px;
+  padding-top: 5px;
+  margin-top: 10px;
+}

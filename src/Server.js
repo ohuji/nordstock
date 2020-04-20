@@ -32,4 +32,17 @@ app.get("/nyse", function(req, response) {
    })
 })
 
+app.get("/nasdaq", function(req, response) {
+  connection.query("SELECT * FROM nasdaq", function(error, results) {
+    if (error) {
+      response.send(error);
+    } 
+    else {
+      return response.json({
+        data: results
+      })
+    }
+  })
+})
+
 app.listen(port, () => console.log("portti 5000 toimii!"));

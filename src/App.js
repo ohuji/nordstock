@@ -10,6 +10,7 @@ import Register from "./components/Register"
 import Home from "./components/Home";
 import Apple from "./components/Apple";
 import Nyse from './components/Nyse';
+import Nasdaq from "./components/Nasdaq";
 
 class App extends Component {
  
@@ -25,8 +26,9 @@ class App extends Component {
    <Route path="/login" component={Login}/>
    <Route path="/register" component={Register}/>
    <Route path="/Home" component={Home}/>
-   <Route path="/Apple" component={Apple}/>
+   <Route path="/AAPL" component={Apple}/>
    <Route path="/NYSE" component={Nyse}/>
+   <Route path="/Nasdaq" component={Nasdaq}/>
    
   </BrowserRouter>
     </div>
