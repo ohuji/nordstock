@@ -11,7 +11,7 @@ const connection = mysql.createConnection({
     database: "nordshop"
 })
 
-connection.connect(function(error) {
+connection.connect(error => {
     if (error) {
         console.log(error);
     }   else {
@@ -47,6 +47,19 @@ app.get("/nasdaq", function(req, response) {
 
 app.get("/currencies", function(req, response) {
   connection.query("SELECT * FROM currencies", function(error, results) {
+    if (error) {
+      response.send(error);
+    } 
+    else {
+      return response.json({
+        data: results
+      })
+    }
+  })
+})
+
+app.get("/sse", function(req, response) {
+  connection.query("SELECT * FROM sse", function(error, results) {
     if (error) {
       response.send(error);
     } 

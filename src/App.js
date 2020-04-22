@@ -12,6 +12,7 @@ import Apple from "./components/Apple";
 import Nyse from './components/Nyse';
 import Nasdaq from "./components/Nasdaq";
 import Currencies from "./components/Currencies";
+import Sse from "./components/Sse";
 
 class App extends Component {
  
@@ -31,6 +32,7 @@ class App extends Component {
    <Route path="/NYSE" component={Nyse}/>
    <Route path="/Nasdaq" component={Nasdaq}/>
    <Route path="/Currencies" component={Currencies}/>
+   <Route path="/Sse" component={Sse}/>
    
    </BrowserRouter>
     </div>

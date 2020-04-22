@@ -11,7 +11,7 @@ const Footer = () => {
 
           <div className="col-md-6">
             <p className="FooterParagraph">
-              Copyright © 2020, J.Salomäki, All Rights Reserved
+              Copyright © 2020, Juho Salomäki, All Rights Reserved
             </p>
           </div>
 

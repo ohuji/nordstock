@@ -117,7 +117,7 @@ const Home = () => {
                 </div>
                 
                 <div className="card HomeCard">
-                <Link to="/Airchina">
+                <Link to="/SHA:601111">
 
                 <img className="card-img-top image-fluid" src={AirChinaLogo}></img>
 
