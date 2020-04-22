@@ -71,4 +71,17 @@ app.get("/sse", function(req, response) {
   })
 })
 
+app.get("/lse", function(req, response) {
+  connection.query("SELECT * FROM lse", function(error, results) {
+    if (error) {
+      response.send(error);
+    } 
+    else {
+      return response.json({
+        data: results
+      })
+    }
+  })
+})
+
 app.listen(port, () => console.log("portti 5000 toimii!"));

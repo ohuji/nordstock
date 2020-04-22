@@ -18,7 +18,7 @@ const Categories = () => {
       <li className="list-group-item rounded-0">
         <Link to="/Nasdaq">
         <h5 className="PercentageNavText">
-        &nbsp;Nasdaq Stock Exhange&nbsp;
+        &nbsp;Nasdaq Stock Exhange (Nasdaq)&nbsp;
         </h5>
         </Link>   
       </li>
@@ -58,7 +58,7 @@ const Categories = () => {
       <li className="list-group-item rounded-0">
         <Link to="/LSE">
         <h5 className="PercentageNavText">
-           London Stock Exchange (LSE)&nbsp;
+        &nbsp;London Stock Exchange (LSE)&nbsp;
         </h5>
         </Link>   
       </li>
@@ -66,7 +66,7 @@ const Categories = () => {
       <li className="list-group-item rounded-0">
         <Link to="/ASX">
         <h5 className="PercentageNavText ">
-           Australian Stock Exhange (AUX)
+        &nbsp;&nbsp;Australian Stock Exhange (AUX)&nbsp;&nbsp;
         </h5>
         </Link>   
       </li>

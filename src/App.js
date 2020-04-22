@@ -13,6 +13,7 @@ import Nyse from './components/Nyse';
 import Nasdaq from "./components/Nasdaq";
 import Currencies from "./components/Currencies";
 import Sse from "./components/Sse";
+import Lse from "./components/Lse";
 
 class App extends Component {
  
@@ -33,6 +34,7 @@ class App extends Component {
    <Route path="/Nasdaq" component={Nasdaq}/>
    <Route path="/Currencies" component={Currencies}/>
    <Route path="/Sse" component={Sse}/>
+   <Route path="/LSE" component={Lse}/>
    
    </BrowserRouter>
     </div>
