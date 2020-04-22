@@ -5,12 +5,12 @@ import "./../App.css";
 const Categories = () => {
     return(
 
-      <ul className="list-group HomeList list-group-horizontal">
+      <ul className="list-group HomeList list-group-horizontal Category">
 
       <li className="list-group-item rounded-0">
         <Link to="/NYSE">
             <h5 className="PercentageNavText">
-              New York Stock Exhange (NYSE)
+            &nbsp;New York Stock Exhange (NYSE)&nbsp;
             </h5>
         </Link>   
       </li>
@@ -18,7 +18,7 @@ const Categories = () => {
       <li className="list-group-item rounded-0">
         <Link to="/Nasdaq">
         <h5 className="PercentageNavText">
-            Nasdaq
+        &nbsp;Nasdaq Stock Exhange&nbsp;
         </h5>
         </Link>   
       </li>
@@ -26,7 +26,7 @@ const Categories = () => {
       <li className="list-group-item rounded-0">
         <Link to="/Currencies">
         <h5 className="PercentageNavText">
-            Valuutat
+        &nbsp;Valuutat&nbsp;
         </h5>
         </Link>   
       </li>
@@ -34,7 +34,7 @@ const Categories = () => {
       <li className="list-group-item rounded-0">
         <Link to="/SSE">
         <h5 className="PercentageNavText">
-            Sanghai Stock Exhange (SSE)
+        &nbsp;Sanghai Stock Exhange (SSE)&nbsp;
         </h5>
         </Link>   
       </li>
@@ -42,7 +42,7 @@ const Categories = () => {
       <li className="list-group-item rounded-0">
         <Link to="/ETF">
         <h5 className="PercentageNavText">
-            Exhange-Traded Funds (ETF)
+        &nbsp;Exhange-Traded Funds (ETF)&nbsp;
         </h5>
         </Link>   
       </li>
@@ -50,7 +50,23 @@ const Categories = () => {
       <li className="list-group-item rounded-0">
         <Link to="/Crypto">
         <h5 className="PercentageNavText">
-            Cryptovaluutat
+        &nbsp;Cryptovaluutat&nbsp;
+        </h5>
+        </Link>   
+      </li>
+
+      <li className="list-group-item rounded-0">
+        <Link to="/LSE">
+        <h5 className="PercentageNavText">
+           London Stock Exchange (LSE)&nbsp;
+        </h5>
+        </Link>   
+      </li>
+
+      <li className="list-group-item rounded-0">
+        <Link to="/ASX">
+        <h5 className="PercentageNavText ">
+           Australian Stock Exhange (AUX)
         </h5>
         </Link>   
       </li>

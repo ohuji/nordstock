@@ -105,7 +105,7 @@ class Apple extends Component {
               <h6>Pörssi:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nasdaq</h6>
             </li>
             <li className="list-group-item">
-              <h6>Markkina arvo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.224 miljardia</h6>
+              <h6>Markkina arvo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.224 miljardia (USD)</h6>
             </li>
           </ul>
          </div>

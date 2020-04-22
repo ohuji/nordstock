@@ -57,7 +57,7 @@ class Sse extends Component {
          <div className="container-fluid">    
          <h1 className="offset-md-0 mt-5 mb-5">Sanghai Stock Exhange (SSE)</h1>  
 
-          <div className="row">
+          <div className="row mt-5">
             <img src={sseLogo} className="image-fluid offset-md-1"></img>
 
             <ul className="list-group col-md-4 offset-md-2 mb-5">

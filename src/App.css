@@ -119,6 +119,7 @@ Link {
 
 .PercentageNavText {
   color: #000000;
+  font-size: 17px;
 }
 
 .background {
@@ -142,4 +143,8 @@ Link {
   font-size: 15px;
   padding-top: 5px;
   margin-top: 10px;
+}
+
+.Category {
+  margin-right: 0px;
 }
