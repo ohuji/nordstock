@@ -14,6 +14,7 @@ import Nasdaq from "./components/Nasdaq";
 import Currencies from "./components/Currencies";
 import Sse from "./components/Sse";
 import Lse from "./components/Lse";
+import Etf from "./components/Etf";
 
 class App extends Component {
  
@@ -35,6 +36,7 @@ class App extends Component {
    <Route path="/Currencies" component={Currencies}/>
    <Route path="/Sse" component={Sse}/>
    <Route path="/LSE" component={Lse}/>
+   <Route path="/ETF" component={Etf}/>
    
    </BrowserRouter>
     </div>

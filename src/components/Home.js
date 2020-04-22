@@ -190,7 +190,7 @@ const Home = () => {
 
              <div className="row offset-md-1 mb-5">
              <div className="card HomeCard">
-                <Link to="/SpyEtf">
+                <Link to="/SPY">
 
                 <img className="card-img-top image-fluid" src={SpdrLogo}></img>
 
@@ -204,7 +204,7 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/DiaEtf">
+                <Link to="/DIA">
 
                 <img className="card-img-top image-fluid" src={SpdrLogo}></img>
 
