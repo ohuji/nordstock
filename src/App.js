@@ -16,6 +16,7 @@ import Sse from "./components/Sse";
 import Lse from "./components/Lse";
 import Etf from "./components/Etf";
 import Crypto from "./components/Crypto";
+import Asx from "./components/Asx";
 
 class App extends Component {
  
@@ -39,6 +40,7 @@ class App extends Component {
    <Route path="/LSE" component={Lse}/>
    <Route path="/ETF" component={Etf}/>
    <Route path="/Crypto" component={Crypto}/>
+   <Route path="/ASX" component={Asx}/>
    
    </BrowserRouter>
     </div>
