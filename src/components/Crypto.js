@@ -1,0 +1,74 @@
+import React, { Component } from "react";
+import "./../App.css";
+import Navbartwo from "./Navbartwo";
+import Categories from "./Categories";
+import PercentageList from "./PercentageList";
+import Footer from "./Footer";
+import cryptoLogo from "./../crypto.png";
+import { Link } from "react-router-dom";
+
+class Crypto extends Component {
+  state = {
+    currencies: []
+  }
+
+  componentDidMount() {
+    this.getCurrencies();
+  }
+
+  getCurrencies = () => {
+    fetch("/crypto/") 
+    .then(response => {
+      return response.json()
+    })
+
+    .then(response => {
+      this.setState({ currencies: response.data })
+    })
+
+    .catch(error => {
+      console.log(error)
+    })
+  }
+
+  render() {
+    const { currencies } = this.state;
+
+    const currencyList = currencies.length ? (
+      currencies.map((currency) => {
+        return(   
+              <li key={currency.id} className="list-group-item list-group-item-action">
+                <Link to={"/"+currency.short} className="PercentageNavText">
+                 {currency.name+" ("+currency.short+")"}
+                </Link>
+              </li>
+        )
+      }) 
+    ) : (
+      <div>
+         <h5>404: Ei löytynyt</h5>
+      </div>
+    )
+    return(
+        <div className="background">
+          <Navbartwo />
+          <Categories />
+          <PercentageList />
+         <div className="container-fluid">    
+         <h1 className="offset-md-0 mt-5 mb-5">Cryptovaluutat</h1>  
+
+          <div className="row">
+            <img src={cryptoLogo} className="image-fluid offset-md-1"></img>
+
+            <ul className="list-group col-md-4 offset-md-2 mb-5">
+             {currencyList}
+           </ul>
+          </div>
+        </div>
+        <Footer />
+       </div>
+    )
+  }
+}
+
+export default Crypto;

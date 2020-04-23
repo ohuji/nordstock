@@ -97,4 +97,18 @@ app.get("/etf", function(req, response) {
   })
 })
 
+app.get("/crypto", function(req, response) {
+  connection.query("SELECT * FROM crypto", function(error, results) {
+    if (error) {
+      response.send(error);
+    } 
+    else {
+      return response.json({
+        data: results
+      })
+    }
+  })
+})
+
+
 app.listen(port, () => console.log("portti 5000 toimii!"));
