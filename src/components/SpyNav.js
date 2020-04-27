@@ -47,7 +47,7 @@ class SpyNav extends Component {
 
             return(
                 <div className="list-group-item rounded-0">
-                 <Link to="/SpyEtf">
+                 <Link to="/SPY">
                   <h5 className="PercentageNavText">SPY S&P 500</h5>
                   </Link>
                   <h5 className="text-success">+{increasedPercentage}%</h5>
@@ -56,7 +56,7 @@ class SpyNav extends Component {
         } else if (stockData[0] === stockData[1]) {        
             return(
                 <div className="list-group-item rounded-0">
-                 <Link to="SpyEtf"> 
+                 <Link to="SPY"> 
                   <h5 className="PercentageNavText">SPY S&P 500</h5>
                   </Link>  
                   <h5 className="text-warning">0.00%</h5>
@@ -70,7 +70,7 @@ class SpyNav extends Component {
 
             return(
                 <div className="list-group-item rounded-0">
-                 <Link to="SpyEtf"> 
+                 <Link to="SPY"> 
                   <h5 className="PercentageNavText">SPY S&P 500</h5>
                   </Link>  
                   <h5 className="text-danger">-{decreasedPercentage}%</h5>

@@ -17,6 +17,7 @@ import Lse from "./components/Lse";
 import Etf from "./components/Etf";
 import Crypto from "./components/Crypto";
 import Asx from "./components/Asx";
+import BerkshireHathaway from './components/BerkshireHathaway';
 
 class App extends Component {
  
@@ -41,6 +42,7 @@ class App extends Component {
    <Route path="/ETF" component={Etf}/>
    <Route path="/Crypto" component={Crypto}/>
    <Route path="/ASX" component={Asx}/>
+   <Route path="/BRK.A" component={BerkshireHathaway}/>
    
    </BrowserRouter>
     </div>

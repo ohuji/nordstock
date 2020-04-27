@@ -219,7 +219,7 @@ const Home = () => {
 
                
                <div className="card HomeCard">
-                <Link to="/VooEtf">
+                <Link to="/VOO">
 
                 <img className="card-img-top image-fluid" src={VanguardLogo}></img>
 
@@ -233,7 +233,7 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/SchdEtf">
+                <Link to="/SCHD">
 
                 <img className="card-img-top image-fluid" src={CharlesSchwabLogo}></img>
 
@@ -247,7 +247,7 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/QQQEtf">
+                <Link to="/QQQ">
 
                 <img className="card-img-top image-fluid" src={InvescoLogo}></img>
 
@@ -261,7 +261,7 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/GldEtf">
+                <Link to="/GLD">
 
                 <img className="card-img-top image-fluid" src={SpdrLogo}></img>
 
@@ -275,7 +275,7 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/VtiEtf">
+                <Link to="/VTI">
 
                 <img className="card-img-top image-fluid" src={VanguardLogo}></img>
 

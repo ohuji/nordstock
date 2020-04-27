@@ -4,13 +4,12 @@ import createPlotlyComponent from "react-plotly.js/factory";
 import Footer from "./Footer";
 import Navbartwo from "./Navbartwo";
 import Categories from "./Categories";
-import { Link } from "react-router-dom";
 import "./../App.css";
 import PercentageList from "./PercentageList";
 
 const Plot = createPlotlyComponent(Plotly);
 
-class Apple extends Component {
+class BerkshireHathaway extends Component {
 
     state = {
         Xaxis: [],
@@ -28,7 +27,7 @@ class Apple extends Component {
         let Yvalue = [];
         let Xvalue = [];
 
-       fetch("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=AAPL&apikey=WF9H64N6MXWBW9AJ")
+       fetch("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=BRK.A&apikey=WF9H64N6MXWBW9AJ")
        .then(response => {
            return response.json();
        })
@@ -62,7 +61,7 @@ class Apple extends Component {
           <Categories/>
           <PercentageList />
          <div className="container-fluid">
-           <h1 className="mt-5 mb-4">Apple osake (NASDAQ: AAPL)</h1>
+           <h1 className="mt-5 mb-4">Berkshire Hathaway Osake (NYSE: BRK.A)</h1>
             <div className="row">       
 
              <Plot
@@ -78,24 +77,28 @@ class Apple extends Component {
           layout={{width: 1050, height: 706}}/>    
 
          <div className="offset-md-1">  
-          <h4>Tämän hetkinen hinta:</h4>
+          <h4>Tämän Hetkinen Hinta:</h4>
           <h2 className="text-success">${Yaxis[0]}</h2>
           
           <ul className="list-group list-group-flush mt-5">
             <li className="list-group-item">
               <h5>Informaatiota Osakkeesta</h5>
             </li>
+
             <li className="list-group-item">
-              <h6>Nimi:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Apple</h6>
+              <h6>Nimi:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Berkshire Hathaway Inc</h6>
             </li>
+
             <li className="list-group-item">
-              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AAPL</h6>
+              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BRK.A</h6>
             </li>
+
             <li className="list-group-item">
-              <h6>Pörssi:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nasdaq</h6>
+              <h6>Pörssi:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New York Stock Exhange</h6>
             </li>
+
             <li className="list-group-item">
-              <h6>Markkina arvo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.224 miljardia (USD)</h6>
+              <h6>Markkina arvo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 545 miljardia (USD)</h6>
             </li>
           </ul>
          </div>
@@ -107,4 +110,4 @@ class Apple extends Component {
     }
 }
 
-export default Apple;
+export default BerkshireHathaway;
