@@ -61,6 +61,8 @@ class Crypto extends Component {
             <img src={cryptoLogo} className="image-fluid offset-md-1"></img>
 
             <ul className="list-group col-md-4 offset-md-2 mb-5">
+
+            <h3 className="mb-3">Cryptot:</h3>
              {currencyList}
            </ul>
           </div>

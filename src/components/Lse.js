@@ -34,6 +34,8 @@ class Lse extends Component {
   render() {
     const { companies } = this.state;
 
+    let time = new Date().toLocaleString();
+
     const companyList = companies.length ? (
       companies.map((company) => {
         return(   
@@ -61,6 +63,10 @@ class Lse extends Component {
             <img src={lseLogo} className="image-fluid offset-md-1"></img>
 
             <ul className="list-group col-md-4 offset-md-2 mb-5">
+            <h5>London Stock Exhange on auki 10:00 - 18:30 (UTC +3) välisenä aikana</h5>
+            <h5 className="mb-5">Tämän hetkinen aikasi on: {time}</h5>
+
+            <h3 className="mb-3">Osakkeet:</h3>
              {companyList}
            </ul>
           </div>

@@ -61,6 +61,8 @@ class Currencies extends Component {
             <img src={currencyLogo} className="image-fluid offset-md-1"></img>
 
             <ul className="list-group col-md-4 offset-md-2 mb-5">
+            
+            <h3 className="mb-3">Valuutat:</h3>
              {currencyList}
            </ul>
           </div>

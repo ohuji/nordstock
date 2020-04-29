@@ -34,6 +34,8 @@ class Nasdaq extends Component {
   render() {
     const { companies } = this.state;
 
+    let time = new Date().toLocaleString();
+
     const companyList = companies.length ? (
       companies.map((company) => {
         return(   
@@ -55,12 +57,16 @@ class Nasdaq extends Component {
           <Categories />
           <PercentageList />
          <div className="container-fluid">    
-         <h1 className="offset-md-0 mt-5 mb-5">Nasdaq</h1>  
+         <h1 className="offset-md-0 mt-5 mb-5">Nasdaq Stock Exhange (Nasdaq)</h1>  
 
           <div className="row">
             <img src={nasdaqLogo} className="image-fluid offset-md-1"></img>
 
             <ul className="list-group col-md-4 offset-md-2 mb-5">
+            <h5>Nasdaq on auki 4:30 - 11:00 (UTC +3) välisenä aikana</h5>
+            <h5 className="mb-5">Tämän hetkinen aikasi on: {time}</h5>
+            
+            <h3 className="mb-3">Osakkeet:</h3>
              {companyList}
            </ul>
           </div>

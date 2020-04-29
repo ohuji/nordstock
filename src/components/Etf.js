@@ -61,6 +61,8 @@ class Etf extends Component {
             <img src={etfLogo} className="image-fluid offset-md-1"></img>
 
             <ul className="list-group col-md-4 offset-md-2 mb-5">
+            
+            <h3 className="mb-3">ETF:ät:</h3>
              {etfList}
            </ul>
           </div>
