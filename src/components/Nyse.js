@@ -4,7 +4,7 @@ import Navbartwo from "./Navbartwo";
 import Categories from "./Categories";
 import PercentageList from "./PercentageList";
 import Footer from "./Footer";
-import nyseLogo from "./../nyse.png";
+import nyseLogo from "./../nysee.png";
 import { Link } from "react-router-dom";
 
 class Nyse extends Component {
@@ -62,14 +62,18 @@ class Nyse extends Component {
           <div className="row">
             <img src={nyseLogo} className="image-fluid offset-md-1"></img>
 
-            <ul className="list-group col-md-4 offset-md-2 mb-5">
-            <h5>New York Stock Exhange on auki 4:30 - 11:00 (UTC +3) välisenä aikana</h5>
-            <h5 className="mb-5">Tämän hetkinen aikasi on: {time}</h5>
-            
+            <ul className="list-group col-md-4 offset-md-2 mb-5">  
+            <div className="DateBackground mb-5 rounded-pill">  
+            <h6 className="mt-3">New Yorkin pörssi on auki 4:30 - 11:00 (UTC +3) välisenä aikana</h6>
+            <h6>Tämän hetkinen päivänmäärä ja kellon aikasi on:</h6>
+            <h5 className="mb-3">{time}</h5>
+            </div>
+
             <h3 className="mb-3">Osakkeet:</h3>
              {companyList}
            </ul>
           </div>
+          
         </div>
         <Footer />
        </div>

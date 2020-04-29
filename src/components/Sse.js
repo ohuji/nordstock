@@ -63,8 +63,11 @@ class Sse extends Component {
             <img src={sseLogo} className="image-fluid offset-md-1"></img>
 
             <ul className="list-group col-md-4 offset-md-2 mb-5">
-            <h5>Sanghai Stock Exhange on auki 4:30 - 10:00 (UTC +3) välisenä aikana</h5>
-            <h5 className="mb-5">Tämän hetkinen aikasi on: {time}</h5>
+            <div className="DateBackground mb-5 rounded-pill">  
+            <h6 className="mt-3">Sanghain pörssi on auki 4:30 - 10:00 (UTC +3) välisenä aikana</h6>
+            <h6>Tämän hetkinen päivänmäärä ja kellon aikasi on:</h6>
+            <h5 className="mb-3">{time}</h5>
+            </div>
 
             <h3 className="mb-3">Osakkeet:</h3>
              {companyList}

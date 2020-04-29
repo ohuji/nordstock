@@ -63,8 +63,11 @@ class Nasdaq extends Component {
             <img src={nasdaqLogo} className="image-fluid offset-md-1"></img>
 
             <ul className="list-group col-md-4 offset-md-2 mb-5">
-            <h5>Nasdaq on auki 4:30 - 11:00 (UTC +3) välisenä aikana</h5>
-            <h5 className="mb-5">Tämän hetkinen aikasi on: {time}</h5>
+            <div className="DateBackground mb-5 rounded-pill">  
+            <h6 className="mt-3">Nasdaq on auki 4:30 - 11:00 (UTC +3) välisenä aikana</h6>
+            <h6>Tämän hetkinen päivänmäärä ja kellon aikasi on:</h6>
+            <h5 className="mb-3">{time}</h5>
+            </div>
             
             <h3 className="mb-3">Osakkeet:</h3>
              {companyList}
