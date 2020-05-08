@@ -19,6 +19,7 @@ import Crypto from "./components/Crypto";
 import Asx from "./components/Asx";
 import BerkshireHathaway from './components/BerkshireHathaway';
 import Alibaba from './components/Alibaba';
+import Jpmorganchase from './components/Jpmorganchase';
 
 class App extends Component {
  
@@ -45,6 +46,7 @@ class App extends Component {
    <Route path="/ASX" component={Asx}/>
    <Route path="/BRK.A" component={BerkshireHathaway}/>
    <Route path="/BABA" component={Alibaba}/>
+   <Route path="/JPM" component={Jpmorganchase}/>
    
    </BrowserRouter>
     </div>
