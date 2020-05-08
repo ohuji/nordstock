@@ -22,6 +22,8 @@ import Alibaba from './components/Alibaba';
 import Jpmorganchase from './components/Jpmorganchase';
 import Visa from './components/Visa';
 import Exxonmobil from './components/Exxonmobil';
+import CocaCola from './components/CocaCola';
+import Walmart from './components/Walmart';
 
 class App extends Component {
  
@@ -51,6 +53,8 @@ class App extends Component {
    <Route path="/JPM" component={Jpmorganchase}/>
    <Route path="/V" component={Visa}/>
    <Route path="/XOM" component={Exxonmobil}/>
+   <Route path="/KO" component={CocaCola}/>
+   <Route path="/WMT" component={Walmart}/>
    
    </BrowserRouter>
     </div>
