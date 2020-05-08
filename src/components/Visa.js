@@ -9,7 +9,7 @@ import PercentageList from "./PercentageList";
 
 const Plot = createPlotlyComponent(Plotly);
 
-class Jpmorganchase extends Component {
+class Visa extends Component {
 
     state = {
         Xaxis: [],
@@ -27,7 +27,7 @@ class Jpmorganchase extends Component {
         let Yvalue = [];
         let Xvalue = [];
 
-       fetch("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=JPM&apikey=WF9H64N6MXWBW9AJ")
+       fetch("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=V&apikey=WF9H64N6MXWBW9AJ")
        .then(response => {
            return response.json();
        })
@@ -61,7 +61,7 @@ class Jpmorganchase extends Component {
           <Categories/>
           <PercentageList />
          <div className="container-fluid">
-           <h1 className="mt-5 mb-4">JP Morgan Chase Osake (NYSE: JPM)</h1>
+           <h1 className="mt-5 mb-4">Visa Osake (NYSE: V)</h1>
             <div className="row">       
 
              <Plot
@@ -86,11 +86,11 @@ class Jpmorganchase extends Component {
             </li>
 
             <li className="list-group-item">
-              <h6>Nimi:&nbsp;&nbsp; JP Morgan Chase & Co</h6>
+              <h6>Nimi:&nbsp;&nbsp; Visa Incorporation</h6>
             </li>
 
             <li className="list-group-item">
-              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JPM</h6>
+              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V</h6>
             </li>
 
             <li className="list-group-item">
@@ -98,7 +98,7 @@ class Jpmorganchase extends Component {
             </li>
 
             <li className="list-group-item">
-              <h6>Markkina arvo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 407 miljardia (USD)</h6>
+              <h6>Markkina arvo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 387 miljardia (USD)</h6>
             </li>
           </ul>
          </div>
@@ -110,4 +110,4 @@ class Jpmorganchase extends Component {
     }
 }
 
-export default Jpmorganchase;
+export default Visa;

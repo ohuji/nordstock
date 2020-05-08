@@ -20,6 +20,7 @@ import Asx from "./components/Asx";
 import BerkshireHathaway from './components/BerkshireHathaway';
 import Alibaba from './components/Alibaba';
 import Jpmorganchase from './components/Jpmorganchase';
+import Visa from './components/Visa';
 
 class App extends Component {
  
@@ -47,6 +48,7 @@ class App extends Component {
    <Route path="/BRK.A" component={BerkshireHathaway}/>
    <Route path="/BABA" component={Alibaba}/>
    <Route path="/JPM" component={Jpmorganchase}/>
+   <Route path="/V" component={Visa}/>
    
    </BrowserRouter>
     </div>
