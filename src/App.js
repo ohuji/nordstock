@@ -34,6 +34,10 @@ import Nvidia from './components/Nvidia';
 import Blizzard from './components/Blizzard';
 import Facebook from './components/Facebook';
 import Intel from './components/Intel';
+import Microsoft from './components/Microsoft';
+import Amd from './components/Amd';
+import Ebay from './components/Ebay';
+import Netflix from './components/Netflix';
 
 class App extends Component {
  
@@ -72,6 +76,10 @@ class App extends Component {
       <Route path="/ATVI" component={Blizzard}/>
       <Route path="/FB" component={Facebook}/>
       <Route path="/INTC" component={Intel}/>
+      <Route path="/MSFT" component={Microsoft}/>
+      <Route path="/AMD" component={Amd}/>
+      <Route path="/EBAY" component={Ebay}/>
+      <Route path="/NFLX" component={Netflix}/>
      </BrowserRouter>
    </div>
   )
