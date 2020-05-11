@@ -30,6 +30,10 @@ import Bankofamerica from './components/Bankofamerica';
 import Amazon from './components/Amazon';
 import Tesla from './components/Tesla';
 import Alphabet from './components/Alphabet';
+import Nvidia from './components/Nvidia';
+import Blizzard from './components/Blizzard';
+import Facebook from './components/Facebook';
+import Intel from './components/Intel';
 
 class App extends Component {
  
@@ -64,6 +68,10 @@ class App extends Component {
       <Route path="/AMZN" component={Amazon}/>
       <Route path="/TSLA" component={Tesla}/>
       <Route path="/GOOGL" component={Alphabet}/>
+      <Route path="/NVDA" component={Nvidia}/>
+      <Route path="/ATVI" component={Blizzard}/>
+      <Route path="/FB" component={Facebook}/>
+      <Route path="/INTC" component={Intel}/>
      </BrowserRouter>
    </div>
   )
