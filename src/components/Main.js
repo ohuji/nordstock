@@ -20,12 +20,12 @@ class Main extends Component {
             <img src={Image} className="image-fluid img"></img>
 
               <h1 className="font font-weight-bold Header display-2">
-                 Tienaa vitusti rahaa meillä
+                 Tienaa rahaa meillä
               </h1>
 
               <p className="Paragraph font font-weight-bold">
                 Liittymällä meidän sivulle saat parhaan mahdollisen sijoitus kokemuksen,
-                ilman turhaa paskan jauhantaa.
+                ilman turhaa jauhantaa.
               </p>
 
               <button className="btn btn-lg btn-primary Button ">

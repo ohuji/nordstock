@@ -38,10 +38,12 @@ import Microsoft from './components/Microsoft';
 import Amd from './components/Amd';
 import Ebay from './components/Ebay';
 import Netflix from './components/Netflix';
+import Euro from './components/Euro';
+import Usd from './components/Usd';
+import Yen from './components/Yen';
+import Gbp from './components/Gbp';
 
 class App extends Component {
- 
-
   render() {
    return (
     <div className="App">  
@@ -80,6 +82,10 @@ class App extends Component {
       <Route path="/AMD" component={Amd}/>
       <Route path="/EBAY" component={Ebay}/>
       <Route path="/NFLX" component={Netflix}/>
+      <Route path="/EUR" component={Euro}/>
+      <Route path="/USD" component={Usd}/>
+      <Route path="/JPY" component={Yen}/>
+      <Route path="/GBP" component={Gbp}/>
      </BrowserRouter>
    </div>
   )
