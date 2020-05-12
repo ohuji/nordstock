@@ -46,6 +46,9 @@ import Franc from './components/Franc';
 import Cad from './components/Cad';
 import Zar from './components/Zar';
 import Sek from './components/Sek';
+import Nzd from './components/Nzd';
+import Aud from './components/Aud';
+import Hkd from './components/Hkd';
 
 class App extends Component {
   render() {
@@ -94,6 +97,9 @@ class App extends Component {
       <Route path="/CAD" component={Cad}/>
       <Route path="/ZAR" component={Zar}/>
       <Route path="/SEK" component={Sek}/>
+      <Route path="/NZD" component={Nzd}/>
+      <Route path="/AUD" component={Aud}/>
+      <Route path="/HKD" component={Hkd}/>
      </BrowserRouter>
    </div>
   )
