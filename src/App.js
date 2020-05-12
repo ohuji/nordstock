@@ -42,6 +42,10 @@ import Euro from './components/Euro';
 import Usd from './components/Usd';
 import Yen from './components/Yen';
 import Gbp from './components/Gbp';
+import Franc from './components/Franc';
+import Cad from './components/Cad';
+import Zar from './components/Zar';
+import Sek from './components/Sek';
 
 class App extends Component {
   render() {
@@ -86,6 +90,10 @@ class App extends Component {
       <Route path="/USD" component={Usd}/>
       <Route path="/JPY" component={Yen}/>
       <Route path="/GBP" component={Gbp}/>
+      <Route path="/CHF" component={Franc}/>
+      <Route path="/CAD" component={Cad}/>
+      <Route path="/ZAR" component={Zar}/>
+      <Route path="/SEK" component={Sek}/>
      </BrowserRouter>
    </div>
   )
