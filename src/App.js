@@ -58,6 +58,10 @@ import Petrochina from './components/Petrochina';
 import Spy from './components/Spy';
 import Dia from './components/Dia';
 import Voo from './components/Voo';
+import Schd from './components/Schd';
+import Qqq from './components/Qqq';
+import Gld from './components/Gld';
+import Vti from './components/Vti';
 
 class App extends Component {
   render() {
@@ -118,6 +122,10 @@ class App extends Component {
       <Route path="/SPY" component={Spy}/>
       <Route path="/DIA" component={Dia}/>
       <Route path="/VOO" component={Voo}/>
+      <Route path="/SCHD" component={Schd}/>
+      <Route path="/QQQ" component={Qqq}/>
+      <Route path="/GLD" component={Gld}/>
+      <Route path="/VTI" component={Vti}/>
      </BrowserRouter>
    </div>
   )
