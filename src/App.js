@@ -52,6 +52,9 @@ import Hkd from './components/Hkd';
 import Airchina from './components/Airchina';
 import Bankofbeijing from './components/Bankofbeijing';
 import Zijing from './components/Zijing';
+import Wanhua from './components/Wanhua';
+import Bankofsanghai from './components/Bankofsanghai';
+import Petrochina from './components/Petrochina';
 
 class App extends Component {
   render() {
@@ -106,6 +109,9 @@ class App extends Component {
       <Route path="/SHA601111" component={Airchina}/>
       <Route path="/SHA601169" component={Bankofbeijing}/>
       <Route path="/SHA601899" component={Zijing}/>
+      <Route path="/SHA600309" component={Wanhua}/>
+      <Route path="/SHA601229" component={Bankofsanghai}/>
+      <Route path="/SHA601857" component={Petrochina}/>
      </BrowserRouter>
    </div>
   )
