@@ -55,6 +55,9 @@ import Zijing from './components/Zijing';
 import Wanhua from './components/Wanhua';
 import Bankofsanghai from './components/Bankofsanghai';
 import Petrochina from './components/Petrochina';
+import Spy from './components/Spy';
+import Dia from './components/Dia';
+import Voo from './components/Voo';
 
 class App extends Component {
   render() {
@@ -112,6 +115,9 @@ class App extends Component {
       <Route path="/SHA600309" component={Wanhua}/>
       <Route path="/SHA601229" component={Bankofsanghai}/>
       <Route path="/SHA601857" component={Petrochina}/>
+      <Route path="/SPY" component={Spy}/>
+      <Route path="/DIA" component={Dia}/>
+      <Route path="/VOO" component={Voo}/>
      </BrowserRouter>
    </div>
   )
