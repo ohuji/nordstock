@@ -62,6 +62,11 @@ import Schd from './components/Schd';
 import Qqq from './components/Qqq';
 import Gld from './components/Gld';
 import Vti from './components/Vti';
+import Bitcoin from './components/Bitcoin';
+import Ethereum from './components/Ethereum';
+import Ripple from './components/Ripple';
+import Litecoin from './components/Litecoin';
+import Bitcoincash from './components/Bitcoincash';
 
 class App extends Component {
   render() {
@@ -126,6 +131,11 @@ class App extends Component {
       <Route path="/QQQ" component={Qqq}/>
       <Route path="/GLD" component={Gld}/>
       <Route path="/VTI" component={Vti}/>
+      <Route path="/BTC" component={Bitcoin}/>
+      <Route path="/ETH" component={Ethereum}/>
+      <Route path="/XRP" component={Ripple}/>
+      <Route path="/LTC" component={Litecoin}/>
+      <Route path="/BCH" component={Bitcoincash}/>
      </BrowserRouter>
    </div>
   )
