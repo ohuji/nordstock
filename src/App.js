@@ -49,6 +49,9 @@ import Sek from './components/Sek';
 import Nzd from './components/Nzd';
 import Aud from './components/Aud';
 import Hkd from './components/Hkd';
+import Airchina from './components/Airchina';
+import Bankofbeijing from './components/Bankofbeijing';
+import Zijing from './components/Zijing';
 
 class App extends Component {
   render() {
@@ -100,6 +103,9 @@ class App extends Component {
       <Route path="/NZD" component={Nzd}/>
       <Route path="/AUD" component={Aud}/>
       <Route path="/HKD" component={Hkd}/>
+      <Route path="/SHA601111" component={Airchina}/>
+      <Route path="/SHA601169" component={Bankofbeijing}/>
+      <Route path="/SHA601899" component={Zijing}/>
      </BrowserRouter>
    </div>
   )
