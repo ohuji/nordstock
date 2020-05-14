@@ -70,6 +70,9 @@ import Bitcoincash from './components/Bitcoincash';
 import Vodafone from './components/Vodafone';
 import Britishamericantobacco from './components/Britishamericantobacco';
 import Hsbc from './components/Hsbc';
+import Royaldutchshell from './components/Royaldutchshell';
+import Tesco from './components/Tesco';
+import Unilever from './components/Unilever';
 
 class App extends Component {
   render() {
@@ -142,6 +145,9 @@ class App extends Component {
       <Route path="/LONVOD" component={Vodafone}/>
       <Route path="/LONBATS" component={Britishamericantobacco}/>
       <Route path="/LONHSBA" component={Hsbc}/>
+      <Route path="/LONRDSB" component={Royaldutchshell}/>
+      <Route path="/LONTSCO" component={Tesco}/>
+      <Route path="/LONULVR" component={Unilever}/>
      </BrowserRouter>
    </div>
   )
