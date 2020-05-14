@@ -67,6 +67,9 @@ import Ethereum from './components/Ethereum';
 import Ripple from './components/Ripple';
 import Litecoin from './components/Litecoin';
 import Bitcoincash from './components/Bitcoincash';
+import Vodafone from './components/Vodafone';
+import Britishamericantobacco from './components/Britishamericantobacco';
+import Hsbc from './components/Hsbc';
 
 class App extends Component {
   render() {
@@ -136,6 +139,9 @@ class App extends Component {
       <Route path="/XRP" component={Ripple}/>
       <Route path="/LTC" component={Litecoin}/>
       <Route path="/BCH" component={Bitcoincash}/>
+      <Route path="/LONVOD" component={Vodafone}/>
+      <Route path="/LONBATS" component={Britishamericantobacco}/>
+      <Route path="/LONHSBA" component={Hsbc}/>
      </BrowserRouter>
    </div>
   )
