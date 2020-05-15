@@ -64,9 +64,9 @@ const Categories = () => {
       </li>
 
       <li className="list-group-item rounded-0">
-        <Link to="/ASX">
+        <Link to="/FRA">
         <h5 className="PercentageNavText">
-          &nbsp; Australian Stock Exhange (ASX) &nbsp;
+          &nbsp; Frankfurt Stock Exhange (FRA) &nbsp;
         </h5>
         </Link>   
       </li>

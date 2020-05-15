@@ -4,10 +4,10 @@ import Navbartwo from "./Navbartwo";
 import Categories from "./Categories";
 import PercentageList from "./PercentageList";
 import Footer from "./Footer";
-import asxLogo from "./../asxLogo.png";
+import fraLogo from "./../Frankfurtexhange.png";
 import { Link } from "react-router-dom";
 
-class Asx extends Component {
+class Fra extends Component {
   state = {
     companies: []
   }
@@ -17,7 +17,7 @@ class Asx extends Component {
   }
 
   getCompanies = () => {
-    fetch("/asx/") 
+    fetch("/fra/") 
     .then(response => {
       return response.json()
     })
@@ -57,15 +57,15 @@ class Asx extends Component {
           <Categories />
           <PercentageList />
          <div className="container-fluid">    
-         <h1 className="offset-md-0 mt-5 mb-5">Australian Stock exhange (ASX)</h1>  
+         <h1 className="offset-md-0 mt-5 mb-5">Frankfurt Stock exhange (FRA)</h1>  
 
           <div className="row mt-5">
-            <img src={asxLogo} className="image-fluid offset-md-1"></img>
+            <img src={fraLogo} className="image-fluid offset-md-1"></img>
 
             <ul className="list-group col-md-4 offset-md-2 mb-5">
 
             <div className="DateBackground mb-5 rounded-pill">  
-            <h6 className="mt-3">Australian pörssi on auki 3:00 - 9:00 (UTC +3) välisenä aikana</h6>
+            <h6 className="mt-3">Franfurtin pörssi on auki 10:00 - 18:30 (UTC +3) välisenä aikana</h6>
             <h6>Tämän hetkinen päivänmäärä ja kellon aikasi on:</h6>
             <h5 className="mb-3">{time}</h5>
             </div>
@@ -81,4 +81,4 @@ class Asx extends Component {
   }
 }
 
-export default Asx;
+export default Fra;

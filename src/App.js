@@ -15,7 +15,6 @@ import Sse from "./components/Sse";
 import Lse from "./components/Lse";
 import Etf from "./components/Etf";
 import Crypto from "./components/Crypto";
-import Asx from "./components/Asx";
 import BerkshireHathaway from './components/BerkshireHathaway';
 import Alibaba from './components/Alibaba';
 import Jpmorganchase from './components/Jpmorganchase';
@@ -73,6 +72,7 @@ import Hsbc from './components/Hsbc';
 import Royaldutchshell from './components/Royaldutchshell';
 import Tesco from './components/Tesco';
 import Unilever from './components/Unilever';
+import Fra from './components/Fra';
 
 class App extends Component {
   render() {
@@ -90,7 +90,7 @@ class App extends Component {
       <Route path="/LSE" component={Lse}/>
       <Route path="/ETF" component={Etf}/>
       <Route path="/Crypto" component={Crypto}/>
-      <Route path="/ASX" component={Asx}/>
+      <Route path="/FRA" component={Fra}/>
       <Route path="/BRK.A" component={BerkshireHathaway}/>
       <Route path="/BABA" component={Alibaba}/>
       <Route path="/JPM" component={Jpmorganchase}/>

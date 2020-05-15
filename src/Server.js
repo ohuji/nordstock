@@ -110,8 +110,8 @@ app.get("/crypto", function(req, response) {
   })
 })
 
-app.get("/asx", function(req, response) {
-  connection.query("SELECT * FROM asx", function(error, results) {
+app.get("/fra", function(req, response) {
+  connection.query("SELECT * FROM fra", function(error, results) {
     if (error) {
       response.send(error);
     } 

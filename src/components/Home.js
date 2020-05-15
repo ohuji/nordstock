@@ -53,10 +53,6 @@ const Home = () => {
              </Link>
              </div>
 
-             <div className="carousel-item ">
-             <img  className="d-block w-100"></img>
-             </div>
-
           </div>
            <a className="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
