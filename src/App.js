@@ -76,6 +76,8 @@ import Fra from './components/Fra';
 import Sap from './components/Sap';
 import Volkswagen from './components/Volkswagen';
 import Siemens from './components/Siemens';
+import Linde from './components/Linde';
+import Allianz from './components/Allianz';
 
 class App extends Component {
   render() {
@@ -154,6 +156,8 @@ class App extends Component {
       <Route path="/FRASAP" component={Sap}/>
       <Route path="/FRAVOW3" component={Volkswagen}/>
       <Route path="/FRASIE" component={Siemens}/>
+      <Route path="/FRALIN" component={Linde}/>
+      <Route path="/FRAALV" component={Allianz}/>
      </BrowserRouter>
    </div>
   )
