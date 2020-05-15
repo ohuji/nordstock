@@ -73,6 +73,9 @@ import Royaldutchshell from './components/Royaldutchshell';
 import Tesco from './components/Tesco';
 import Unilever from './components/Unilever';
 import Fra from './components/Fra';
+import Sap from './components/Sap';
+import Volkswagen from './components/Volkswagen';
+import Siemens from './components/Siemens';
 
 class App extends Component {
   render() {
@@ -148,6 +151,9 @@ class App extends Component {
       <Route path="/LONRDSB" component={Royaldutchshell}/>
       <Route path="/LONTSCO" component={Tesco}/>
       <Route path="/LONULVR" component={Unilever}/>
+      <Route path="/FRASAP" component={Sap}/>
+      <Route path="/FRAVOW3" component={Volkswagen}/>
+      <Route path="/FRASIE" component={Siemens}/>
      </BrowserRouter>
    </div>
   )
