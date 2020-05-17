@@ -38,14 +38,10 @@
 }
 
 nav {
-  background-color: #101010;
-  padding: 25x;
+  background-color: #404040;
+  padding-top: 2px;
   color: #FFFFFF;
   height: 75px;
-}
-
-Link {
-  color: #FFFFFF
 }
 
 .img {
@@ -112,8 +108,7 @@ Link {
   margin-right: 50px;
 }
 
-.PercentageNavText {
-  color: #000000;
+.linkSize {
   font-size: 16px;
 }
 
@@ -126,7 +121,7 @@ Link {
 }
 
 .site-footer{
-  background-color: #101010;
+  background-color: #404040;
   color: #FFFFFF;
   margin-top: 20px;
   padding-top: 20px;
@@ -146,4 +141,27 @@ Link {
 
 .DateBackground {
   background-color: #FDCE3F;
+}
+
+.Link {
+  color: #000000;
+}
+
+.Link:hover {
+  text-decoration: none;
+  color: #808080;
+}
+
+.NavLink {
+  color: #FFFF
+}
+
+.NavLink:hover {
+  text-decoration: none;
+  color: #808080;
+}
+
+.NavList {
+  background-color: #404040;
+  padding-right: 21px;
 }

@@ -46,18 +46,18 @@ class BtcNav extends Component {
             let increasedPercentage = increase / currencyData[1] * 100;
 
             return(
-                <div className="list-group-item rounded-0">
-                 <Link to="/Btc">
-                  <h5 className="PercentageNavText">Bitcoin</h5>
+                <div className="list-group-item NavList rounded-0">
+                 <Link className="NavLink" to="/Btc">
+                  <h5 className="linkSize">Bitcoin</h5>
                   </Link>
                   <h5 className="text-success">+{increasedPercentage}%</h5>
                 </div>
             )
         } else if (currencyData[0] === currencyData[1]) {        
             return(
-                <div className="list-group-item rounded-0">
-                 <Link to="Btc"> 
-                  <h5 className="PercentageNavText">Bitcoin</h5>
+                <div className="list-group-item NavList rounded-0">
+                 <Link className="NavLink" to="Btc"> 
+                  <h5 className="linkSize">Bitcoin</h5>
                   </Link>  
                   <h5 className="text-warning">0.00%</h5>
                 </div>
@@ -69,9 +69,9 @@ class BtcNav extends Component {
             let decreasedPercentage = decrease / currencyData[0] * 100;
 
             return(
-                <div className="list-group-item rounded-0">
-                 <Link to="Btc"> 
-                  <h5 className="PercentageNavText">Bitcoin</h5>
+                <div className="list-group-item NavList rounded-0">
+                 <Link className="NavLink" to="Btc"> 
+                  <h5 className="linkSize">Bitcoin</h5>
                   </Link>  
                   <h5 className="text-danger">-{decreasedPercentage}%</h5>
                 </div>

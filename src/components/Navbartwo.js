@@ -7,7 +7,7 @@ const Navbartwo = () => {
     <nav className="navbar">
 
         <div className="navbar-brand offset-2">
-         <Link to="/" className="text-white">
+         <Link to="/" className="NavLink">
                Logo
          </Link>
        </div>

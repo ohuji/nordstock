@@ -46,18 +46,18 @@ class UsdNav extends Component {
             let increasedPercentage = increase / currencyData[1] * 100;
 
             return(
-                <div className="list-group-item rounded-0">
-                 <Link to="/Usd">
-                  <h5 className="PercentageNavText">United States Dollar</h5>
+                <div className="list-group-item NavList">
+                 <Link className="NavLink" to="/Usd">
+                  <h5 className="linkSize">United States Dollar</h5>
                   </Link>
                   <h5 className="text-success">+{increasedPercentage}%</h5>
                 </div>
             )
         } else if (currencyData[0] === currencyData[1]) {        
             return(
-                <div className="list-group-item rounded-0">
-                 <Link to="Usd"> 
-                  <h5 className="PercentageNavText">United States Dollar</h5>
+                <div className="list-group-item NavList">
+                 <Link className="NavLink" to="Usd"> 
+                  <h5 className="linkSize">United States Dollar</h5>
                   </Link>  
                   <h5 className="text-warning">0.00%</h5>
                 </div>
@@ -69,9 +69,9 @@ class UsdNav extends Component {
             let decreasedPercentage = decrease / currencyData[0] * 100;
 
             return(
-                <div className="list-group-item rounded-0">
-                 <Link to="Usd"> 
-                  <h5 className="PercentageNavText">United States Dollar</h5>
+                <div className="list-group-item NavList">
+                 <Link className="NavLink" to="Usd"> 
+                  <h5 className="linkSize">United States Dollar</h5>
                   </Link>  
                   <h5 className="text-danger">-{decreasedPercentage}%</h5>
                 </div>

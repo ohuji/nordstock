@@ -38,7 +38,7 @@ class Currencies extends Component {
       currencies.map((currency) => {
         return(   
               <li key={currency.id} className="list-group-item list-group-item-action">
-                <Link to={"/"+currency.short} className="PercentageNavText">
+                <Link to={"/"+currency.short} className="linkSize Link">
                  {currency.name+" ("+currency.short+")"}
                 </Link>
               </li>

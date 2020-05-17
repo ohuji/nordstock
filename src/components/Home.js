@@ -85,12 +85,12 @@ const Home = () => {
 
            <div className="row offset-md-1"> 
                <div className="card HomeCard">
-                <Link to="/AAPL">
+                <Link className="Link" to="/AAPL">
 
                 <img className="card-img-top image-fluid" src={AppleLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text PercentageNavText">
+                 <h5 className="card-text mt-4 linkSize">
                      Apple (AAPL)
                  </h5>           
                 </div>
@@ -99,12 +99,12 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/AMZN">
+                <Link className="Link" to="/AMZN">
 
                 <img className="card-img-top image-fluid" src={AmazonLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text PercentageNavText">
+                 <h5 className="card-text mt-4 linkSize">
                      Amazon (AMZN)
                  </h5>           
                 </div>
@@ -113,12 +113,12 @@ const Home = () => {
                 </div>
                 
                 <div className="card HomeCard">
-                <Link to="/SHA601111">
+                <Link className="Link" to="/SHA601111">
 
                 <img className="card-img-top image-fluid" src={AirChinaLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text PercentageNavText">
+                 <h5 className="card-text mt-4 linkSize">
                      Air China (601111)
                  </h5>           
                 </div>
@@ -127,12 +127,12 @@ const Home = () => {
                 </div>
 
                 <div className="card HomeCard">
-                <Link to="/JPM">
+                <Link className="Link" to="/JPM">
 
                 <img className="card-img-top image-fluid" src={JPMorganLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text PercentageNavText">
+                 <h5 className="card-text mt-4 linkSize">
                      JP Morgan Chase (JPM)
                  </h5>           
                 </div>
@@ -141,12 +141,12 @@ const Home = () => {
                 </div>
 
                 <div className="card HomeCard">
-                <Link to="/TSLA">
+                <Link className="Link" to="/TSLA">
 
                 <img className="card-img-top image-fluid" src={TeslaLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text mt-2 PercentageNavText">
+                 <h5 className="card-text mt-4 linkSize">
                      Tesla (TSLA)
                  </h5>           
                 </div>
@@ -155,12 +155,12 @@ const Home = () => {
                 </div>
 
                 <div className="card HomeCard">
-                <Link to="/GOOGL">
+                <Link className="Link" to="/GOOGL">
 
                 <img className="card-img-top image-fluid" src={AlphabetLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text PercentageNavText">
+                 <h5 className="card-text mt-4 linkSize">
                      Alphabet Inc (GOOGL)
                  </h5>           
                 </div>
@@ -169,12 +169,12 @@ const Home = () => {
                 </div>
 
                 <div className="card HomeCard">
-                <Link to="/NVDA">
+                <Link className="Link" to="/NVDA">
 
                 <img className="card-img-top image-fluid" src={NvidiaLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text mt-5 PercentageNavText">
+                 <h5 className="card-text mt-5 linkSize">
                      Nvidia (NVDA)
                  </h5>           
                 </div>
@@ -186,12 +186,12 @@ const Home = () => {
 
              <div className="row offset-md-1 mb-5">
              <div className="card HomeCard">
-                <Link to="/SPY">
+                <Link className="Link" to="/SPY">
 
                 <img className="card-img-top image-fluid" src={SpdrLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text mt-4 PercentageNavText">
+                 <h5 className="card-text mt-4 linkSize">
                      SPDR S&P 500 ETF Trust (SPY)
                  </h5>           
                 </div>
@@ -200,12 +200,12 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/DIA">
+                <Link className="Link" to="/DIA">
 
                 <img className="card-img-top image-fluid" src={SpdrLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text PercentageNavText">
+                 <h5 className="card-text mt-4 linkSize">
                      SPDR Dow Jones Industrial Average ETF Trust (DIA)
                  </h5>           
                 </div>
@@ -215,12 +215,12 @@ const Home = () => {
 
                
                <div className="card HomeCard">
-                <Link to="/VOO">
+                <Link className="Link" to="/VOO">
 
                 <img className="card-img-top image-fluid" src={VanguardLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text mt-4 PercentageNavText">
+                 <h5 className="card-text mt-4 linkSize">
                      Vanguard S&P 500 ETF (VOO)
                  </h5>           
                 </div>
@@ -229,12 +229,12 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/SCHD">
+                <Link className="Link" to="/SCHD">
 
                 <img className="card-img-top image-fluid" src={CharlesSchwabLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text mt-2 PercentageNavText">
+                 <h5 className="card-text mt-4 linkSize">
                      Schwab U.S Dividend Equity ETF (SCHD)
                  </h5>           
                 </div>
@@ -243,12 +243,12 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/QQQ">
+                <Link className="Link" to="/QQQ">
 
                 <img className="card-img-top image-fluid" src={InvescoLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text mt-4 PercentageNavText">
+                 <h5 className="card-text mt-4 linkSize">
                      Invesco QQQ ETF (QQQ)
                  </h5>           
                 </div>
@@ -257,12 +257,12 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/GLD">
+                <Link className="Link" to="/GLD">
 
                 <img className="card-img-top image-fluid" src={SpdrLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text mt-4 PercentageNavText">
+                 <h5 className="card-text mt-4 linkSize">
                      SPDR Gold ETF Trust (GLD)
                  </h5>           
                 </div>
@@ -271,12 +271,12 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/VTI">
+                <Link className="Link" to="/VTI">
 
                 <img className="card-img-top image-fluid" src={VanguardLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text mt-2 PercentageNavText">
+                 <h5 className="card-text mt-4 linkSize">
                      Vanguard Total Stock Market ETF (VTI)
                  </h5>           
                 </div>
@@ -290,12 +290,12 @@ const Home = () => {
                <div className="row offset-md-1 mb-5">
                  
                <div className="card HomeCard">
-                <Link to="/EUR">
+                <Link className="Link" to="/EUR">
 
                 <img className="card-img-top image-fluid" src={EuroLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text PercentageNavText">
+                 <h5 className="card-text linkSize">
                      Euro (EUR)
                  </h5>           
                 </div>
@@ -304,12 +304,12 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/BTC">
+                <Link className="Link" to="/BTC">
 
                 <img className="card-img-top image-fluid" src={BitcoinLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text mt-5 PercentageNavText">
+                 <h5 className="card-text mt-5 linkSize">
                      Bitcoin (BTC)
                  </h5>           
                 </div>
@@ -318,12 +318,12 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/USD">
+                <Link className="Link" to="/USD">
 
                 <img className="card-img-top image-fluid" src={UsdLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text mt-5 PercentageNavText">
+                 <h5 className="card-text mt-5 linkSize">
                      United States Dollar (USD)
                  </h5>           
                 </div>
@@ -332,12 +332,12 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/JPY">
+                <Link className="Link" to="/JPY">
 
                 <img className="card-img-top image-fluid" src={JpyLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text mt-5 PercentageNavText">
+                 <h5 className="card-text mt-5 linkSize">
                      Japanese Yen (JPY)
                  </h5>           
                 </div>
@@ -346,12 +346,12 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/ETH">
+                <Link className="Link" to="/ETH">
 
                 <img className="card-img-top image-fluid" src={EthereumLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text mt-5 PercentageNavText">
+                 <h5 className="card-text mt-5 linkSize">
                      Ethereum (ETH)
                  </h5>           
                 </div>
@@ -360,12 +360,12 @@ const Home = () => {
                </div>
 
                <div className="card HomeCard">
-                <Link to="/XRP">
+                <Link className="Link" to="/XRP">
 
                 <img className="card-img-top image-fluid" src={RippleLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text mt-5 PercentageNavText">
+                 <h5 className="card-text mt-5 linkSize">
                      Ripple (XRP)
                  </h5>           
                 </div>
@@ -374,12 +374,12 @@ const Home = () => {
                </div>
                
                <div className="card HomeCard">
-                <Link to="/GBP">
+                <Link className="Link" to="/GBP">
 
                 <img className="card-img-top image-fluid" src={GbpLogo}></img>
 
                 <div className="card-body HomeCard">
-                 <h5 className="card-text mt-5 PercentageNavText">
+                 <h5 className="card-text mt-5 linkSize">
                      Great British Pound (GBP)
                  </h5>           
                 </div>

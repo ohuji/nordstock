@@ -6,7 +6,7 @@ import BtcNav from "./BtcNav";
 
 const PercentageList = () => {
     return (
-        <div className="list-group list-group-horizontal-lg offset-md-3">
+        <div className="list-group list-group-flush list-group-horizontal-lg offset-md-3">
           <SpyNav />
           <UsdNav />
           <EuroNav />

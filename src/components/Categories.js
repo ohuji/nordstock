@@ -5,67 +5,67 @@ import "./../App.css";
 const Categories = () => {
     return(
 
-      <ul className="list-group HomeList list-group-horizontal Categories">
+      <ul className="list-group list-group-flush HomeList list-group-horizontal Categories">
 
-      <li className="list-group-item rounded-0">
-        <Link to="/NYSE">
-            <h5 className="PercentageNavText">
+      <li className="list-group-item NavList rounded-0">
+        <Link className="NavLink" to="/NYSE">
+            <h5 className="linkSize">
               &nbsp;New York Stock Exhange (NYSE)&nbsp;
             </h5>
         </Link>   
       </li>
 
-      <li className="list-group-item rounded-0">
-        <Link to="/Nasdaq">
-        <h5 className="PercentageNavText">
+      <li className="list-group-item NavList rounded-0">
+        <Link className="NavLink" to="/Nasdaq">
+        <h5 className="linkSize">
           &nbsp;Nasdaq Stock Exhange (Nasdaq)&nbsp;
         </h5>
         </Link>   
       </li>
 
-      <li className="list-group-item rounded-0">
-        <Link to="/Currencies">
-        <h5 className="PercentageNavText">
+      <li className="list-group-item NavList rounded-0">
+        <Link className="NavLink" to="/Currencies">
+        <h5 className="linkSize">
           &nbsp;Valuutat&nbsp;
         </h5>
         </Link>   
       </li>
 
-      <li className="list-group-item rounded-0">
-        <Link to="/SSE">
-        <h5 className="PercentageNavText">
+      <li className="list-group-item NavList rounded-0">
+        <Link className="NavLink" to="/SSE">
+        <h5 className="linkSize">
           &nbsp;Sanghai Stock Exhange (SSE)&nbsp;
         </h5>
         </Link>   
       </li>
 
-      <li className="list-group-item rounded-0">
-        <Link to="/ETF">
-        <h5 className="PercentageNavText">
+      <li className="list-group-item NavList rounded-0">
+        <Link className="NavLink" to="/ETF">
+        <h5 className="linkSize">
           &nbsp;Exhange-Traded Funds (ETF)&nbsp;
         </h5>
         </Link>   
       </li>
 
-      <li className="list-group-item rounded-0">
-        <Link to="/Crypto">
-        <h5 className="PercentageNavText">
+      <li className="list-group-item NavList rounded-0">
+        <Link className="NavLink" to="/Crypto">
+        <h5 className="linkSize">
           &nbsp;Cryptovaluutat&nbsp;
         </h5>
         </Link>   
       </li>
 
-      <li className="list-group-item rounded-0">
-        <Link to="/LSE">
-        <h5 className="PercentageNavText">
+      <li className="list-group-item NavList rounded-0">
+        <Link className="NavLink" to="/LSE">
+        <h5 className="linkSize">
           &nbsp;London Stock Exchange (LSE)&nbsp;
         </h5>
         </Link>   
       </li>
 
-      <li className="list-group-item rounded-0">
-        <Link to="/FRA">
-        <h5 className="PercentageNavText">
+      <li className="list-group-item NavList rounded-0">
+        <Link className="NavLink" to="/FRA">
+        <h5 className="linkSize">
           &nbsp; Frankfurt Stock Exhange (FRA) &nbsp;
         </h5>
         </Link>   

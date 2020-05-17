@@ -46,18 +46,18 @@ class EuroNav extends Component {
             let increasedPercentage = increase / currencyData[1] * 100;
 
             return(
-                <div className="list-group-item rounded-0">
-                 <Link to="/EUR">
-                  <h5 className="PercentageNavText">European Euro</h5>
+                <div className="list-group-item NavList">
+                 <Link className="NavLink" to="/EUR">
+                  <h5 className="linkSize">European Euro</h5>
                   </Link>
                   <h5 className="text-success">+{increasedPercentage}%</h5>
                 </div>
             )
         } else if (currencyData[0] === currencyData[1]) {        
             return(
-                <div className="list-group-item rounded-0">
-                 <Link to="EUR"> 
-                  <h5 className="PercentageNavText">European Euro</h5>
+                <div className="list-group-item NavList">
+                 <Link className="NavLink" to="EUR"> 
+                  <h5 className="linkSize">European Euro</h5>
                   </Link>  
                   <h5 className="text-warning">0.00%</h5>
                 </div>
@@ -69,9 +69,9 @@ class EuroNav extends Component {
             let decreasedPercentage = decrease / currencyData[0] * 100;
 
             return(
-                <div className="list-group-item rounded-0">
-                 <Link to="EUR"> 
-                  <h5 className="PercentageNavText">European Euro</h5>
+                <div className="list-group-item NavList">
+                 <Link className="NavLink" to="EUR"> 
+                  <h5 className="linkSize">European Euro</h5>
                   </Link>  
                   <h5 className="text-danger">-{decreasedPercentage}%</h5>
                 </div>
