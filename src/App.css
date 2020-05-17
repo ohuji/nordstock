@@ -38,7 +38,7 @@
 }
 
 nav {
-  background-color: #303030;
+  background-color: #33363b;
   padding-top: 2px;
   color: #FFFFFF;
   height: 75px;
@@ -113,7 +113,7 @@ nav {
 }
 
 .background {
-  background-color: #F8F8F8;
+  background-color: #eaeaea;
 }
 
 .InfoCard {
@@ -121,7 +121,7 @@ nav {
 }
 
 .site-footer{
-  background-color: #303030;
+  background-color: #33363b;
   color: #FFFFFF;
   margin-top: 20px;
   padding-top: 20px;
@@ -162,6 +162,6 @@ nav {
 }
 
 .NavList {
-  background-color: #303030;
-  padding-right: 21px;
+  background-color: #33363b;
+  padding-right: 23px;
 }
