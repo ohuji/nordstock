@@ -60,7 +60,7 @@ class Gbp extends Component {
           <Navbartwo />
           <Categories/>
           <PercentageList />
-         <div className="container-fluid">
+         <div className="container-fluid leftAnimation">
            <h1 className="mt-5 mb-4">Great British Pound (GBP)</h1>
             <div className="row">       
 
@@ -90,11 +90,11 @@ class Gbp extends Component {
             </li>
 
             <li className="list-group-item">
-              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GBP</h6>
+              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GBP</h6>
             </li>
 
             <li className="list-group-item">
-              <h6>Symboli:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; £</h6>
+              <h6>Symboli:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; £</h6>
             </li>
           </ul>
          </div>

@@ -60,7 +60,7 @@ class Euro extends Component {
           <Navbartwo />
           <Categories/>
           <PercentageList />
-         <div className="container-fluid">
+         <div className="container-fluid leftAnimation">
            <h1 className="mt-5 mb-4">European Euro (EUR)</h1>
             <div className="row">       
 
@@ -90,11 +90,11 @@ class Euro extends Component {
             </li>
 
             <li className="list-group-item">
-              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; EUR</h6>
+              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp; EUR</h6>
             </li>
 
             <li className="list-group-item">
-              <h6>Symboli:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; €</h6>
+              <h6>Symboli:&nbsp;&nbsp;&nbsp;&nbsp; €</h6>
             </li>
           </ul>
          </div>

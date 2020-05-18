@@ -54,7 +54,7 @@ class Currencies extends Component {
           <Navbartwo />
           <Categories />
           <PercentageList />
-         <div className="container-fluid">    
+         <div className="container-fluid leftAnimation">    
          <h1 className="offset-md-0 mt-5 mb-5">Valuutat</h1>  
 
           <div className="row">

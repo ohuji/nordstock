@@ -60,7 +60,7 @@ class Nzd extends Component {
           <Navbartwo />
           <Categories/>
           <PercentageList />
-         <div className="container-fluid">
+         <div className="container-fluid leftAnimation">
            <h1 className="mt-5 mb-4">New Zealand Dollar (NZD)</h1>
             <div className="row">       
 
@@ -90,11 +90,11 @@ class Nzd extends Component {
             </li>
 
             <li className="list-group-item">
-              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NZD</h6>
+              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp;; NZD</h6>
             </li>
 
             <li className="list-group-item">
-              <h6>Symboli:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $</h6>
+              <h6>Symboli:&nbsp;&nbsp;&nbsp;&nbsp; $</h6>
             </li>
           </ul>
          </div>

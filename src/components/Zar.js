@@ -60,7 +60,7 @@ class Zar extends Component {
           <Navbartwo />
           <Categories/>
           <PercentageList />
-         <div className="container-fluid">
+         <div className="container-fluid leftAnimation">
            <h1 className="mt-5 mb-4">South African Rand (ZAR)</h1>
             <div className="row">       
 
@@ -90,11 +90,11 @@ class Zar extends Component {
             </li>
 
             <li className="list-group-item">
-              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ZAR</h6>
+              <h6>Lyhenne:&nbsp;&nbsp;&nbsp; ZAR</h6>
             </li>
 
             <li className="list-group-item">
-              <h6>Symboli:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R</h6>
+              <h6>Symboli:&nbsp;&nbsp;&nbsp; R</h6>
             </li>
           </ul>
          </div>

@@ -60,7 +60,7 @@ class Zijing extends Component {
           <Navbartwo />
           <Categories/>
           <PercentageList />
-         <div className="container-fluid">
+         <div className="container-fluid leftAnimation">
            <h1 className="mt-5 mb-4">Zijing Mining Osake (SHA: 601899)</h1>
             <div className="row">       
 
@@ -90,15 +90,15 @@ class Zijing extends Component {
             </li>
 
             <li className="list-group-item">
-              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 601899</h6>
+              <h6>Lyhenne:&nbsp;&nbsp;&nbsp; 601899</h6>
             </li>
 
             <li className="list-group-item">
-              <h6>Pörssi:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sanghai Stock Exhange</h6>
+              <h6>Pörssi:&nbsp;&nbsp;&nbsp;&nbsp; Sanghai Stock Exhange</h6>
             </li>
 
             <li className="list-group-item">
-              <h6>Markkina arvo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 97 miljardia (USD)</h6>
+              <h6>Markkina arvo:&nbsp;&nbsp;&nbsp;&nbsp; 97 miljardia (USD)</h6>
             </li>
           </ul>
          </div>

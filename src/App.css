@@ -38,7 +38,7 @@
 }
 
 nav {
-  background-color: #33363b;
+  background-color: #292b2c;
   padding-top: 2px;
   color: #FFFFFF;
   height: 75px;
@@ -104,6 +104,12 @@ nav {
   margin-right: 40px;
 }
 
+.HomeCard:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 15px 35px 0 rgba(0, 0, 0, 0.19);
+  font-size: 20px;
+  transition: 300ms;
+}
+
 .HomeList {
   margin-right: 50px;
 }
@@ -113,7 +119,7 @@ nav {
 }
 
 .background {
-  background-color: #eaeaea;
+  background-color: #F8F8F8;
 }
 
 .InfoCard {
@@ -121,7 +127,7 @@ nav {
 }
 
 .site-footer{
-  background-color: #33363b;
+  background-color: #292b2c;
   color: #FFFFFF;
   margin-top: 20px;
   padding-top: 20px;
@@ -162,6 +168,15 @@ nav {
 }
 
 .NavList {
-  background-color: #33363b;
+  background-color: #292b2c;
   padding-right: 23px;
 }
+
+.leftAnimation {
+  position:relative;
+  animation:animateleft 0.5s
+}
+
+@keyframes animateleft {
+  from{left:-300px;opacity:0}
+  to{left:0;opacity:1}}

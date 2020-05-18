@@ -60,7 +60,7 @@ class Spy extends Component {
           <Navbartwo />
           <Categories/>
           <PercentageList />
-         <div className="container-fluid">
+         <div className="container-fluid leftAnimation">
            <h1 className="mt-5 mb-4">SPDR S&P 500 Trust ETF (NYSEARCA: SPY)</h1>
             <div className="row">       
 
@@ -90,7 +90,7 @@ class Spy extends Component {
             </li>
 
             <li className="list-group-item">
-              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SPY</h6>
+              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp; SPY</h6>
             </li>
 
             <li className="list-group-item">

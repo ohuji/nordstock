@@ -56,7 +56,7 @@ class Fra extends Component {
           <Navbartwo />
           <Categories />
           <PercentageList />
-         <div className="container-fluid">    
+         <div className="container-fluid leftAnimation">    
          <h1 className="offset-md-0 mt-5 mb-5">Frankfurt Stock exhange (FRA)</h1>  
 
           <div className="row mt-5">

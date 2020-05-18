@@ -60,7 +60,7 @@ class Bankofbeijing extends Component {
           <Navbartwo />
           <Categories/>
           <PercentageList />
-         <div className="container-fluid">
+         <div className="container-fluid leftAnimation">
            <h1 className="mt-5 mb-4">Bank Of Beijing Osake (SHA: 601169)</h1>
             <div className="row">       
 
@@ -90,7 +90,7 @@ class Bankofbeijing extends Component {
             </li>
 
             <li className="list-group-item">
-              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 601169</h6>
+              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 601169</h6>
             </li>
 
             <li className="list-group-item">

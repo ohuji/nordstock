@@ -60,7 +60,7 @@ class Aud extends Component {
           <Navbartwo />
           <Categories/>
           <PercentageList />
-         <div className="container-fluid">
+         <div className="container-fluid leftAnimation">
            <h1 className="mt-5 mb-4">Australian Dollar (AUD)</h1>
             <div className="row">       
 

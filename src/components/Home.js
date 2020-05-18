@@ -32,7 +32,7 @@ const Home = () => {
          <Categories />
          <PercentageList />      
 
-          <div className="container-fluid">
+          <div className="container-fluid leftAnimation">
 
           <div className="row mt-5">
            <div id="carouselIndicators" className="carousel slide offset-md-1" data-ride="carousel">
@@ -81,7 +81,7 @@ const Home = () => {
                 </div>
            </div>  
 
-           <h3 className="mt-5 mb-3">Suositut kohteessa: Osakkeet</h3>
+           <h3 className="mt-5 mb-4">Suositut kohteessa: Osakkeet</h3>
 
            <div className="row offset-md-1"> 
                <div className="card HomeCard">
@@ -89,7 +89,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={AppleLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-4 linkSize">
                      Apple (AAPL)
                  </h5>           
@@ -103,7 +103,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={AmazonLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-4 linkSize">
                      Amazon (AMZN)
                  </h5>           
@@ -117,7 +117,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={AirChinaLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-4 linkSize">
                      Air China (601111)
                  </h5>           
@@ -131,7 +131,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={JPMorganLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-4 linkSize">
                      JP Morgan Chase (JPM)
                  </h5>           
@@ -145,7 +145,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={TeslaLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-4 linkSize">
                      Tesla (TSLA)
                  </h5>           
@@ -159,7 +159,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={AlphabetLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-4 linkSize">
                      Alphabet Inc (GOOGL)
                  </h5>           
@@ -173,7 +173,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={NvidiaLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-5 linkSize">
                      Nvidia (NVDA)
                  </h5>           
@@ -182,7 +182,7 @@ const Home = () => {
                  </Link>
                 </div>
            </div>
-             <h3 className="mt-5 mb-3">Suositut kohteessa: Exhange-Traded Funds (ETF)</h3>
+             <h3 className="mt-5 mb-4">Suositut kohteessa: Exhange-Traded Funds (ETF)</h3>
 
              <div className="row offset-md-1 mb-5">
              <div className="card HomeCard">
@@ -190,7 +190,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={SpdrLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-4 linkSize">
                      SPDR S&P 500 ETF Trust (SPY)
                  </h5>           
@@ -204,7 +204,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={SpdrLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-4 linkSize">
                      SPDR Dow Jones Industrial Average ETF Trust (DIA)
                  </h5>           
@@ -219,7 +219,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={VanguardLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-4 linkSize">
                      Vanguard S&P 500 ETF (VOO)
                  </h5>           
@@ -233,7 +233,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={CharlesSchwabLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-4 linkSize">
                      Schwab U.S Dividend Equity ETF (SCHD)
                  </h5>           
@@ -247,7 +247,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={InvescoLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-4 linkSize">
                      Invesco QQQ ETF (QQQ)
                  </h5>           
@@ -261,7 +261,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={SpdrLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-4 linkSize">
                      SPDR Gold ETF Trust (GLD)
                  </h5>           
@@ -275,7 +275,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={VanguardLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-4 linkSize">
                      Vanguard Total Stock Market ETF (VTI)
                  </h5>           
@@ -286,7 +286,7 @@ const Home = () => {
 
              </div>
 
-              <h3 className="mt-5 mb-3">Suositut kohteessa: Cryptot ja valuutat</h3>
+              <h3 className="mt-5 mb-4">Suositut kohteessa: Cryptot ja valuutat</h3>
                <div className="row offset-md-1 mb-5">
                  
                <div className="card HomeCard">
@@ -294,7 +294,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={EuroLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text linkSize">
                      Euro (EUR)
                  </h5>           
@@ -308,7 +308,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={BitcoinLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-5 linkSize">
                      Bitcoin (BTC)
                  </h5>           
@@ -322,7 +322,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={UsdLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-5 linkSize">
                      United States Dollar (USD)
                  </h5>           
@@ -336,7 +336,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={JpyLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-5 linkSize">
                      Japanese Yen (JPY)
                  </h5>           
@@ -350,7 +350,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={EthereumLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-5 linkSize">
                      Ethereum (ETH)
                  </h5>           
@@ -364,7 +364,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={RippleLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-5 linkSize">
                      Ripple (XRP)
                  </h5>           
@@ -378,7 +378,7 @@ const Home = () => {
 
                 <img className="card-img-top image-fluid" src={GbpLogo}></img>
 
-                <div className="card-body HomeCard">
+                <div className="card-body">
                  <h5 className="card-text mt-5 linkSize">
                      Great British Pound (GBP)
                  </h5>           

@@ -60,7 +60,7 @@ class Airchina extends Component {
           <Navbartwo />
           <Categories/>
           <PercentageList />
-         <div className="container-fluid">
+         <div className="container-fluid leftAnimation">
            <h1 className="mt-5 mb-4">Air China Osake (SHA: 601111)</h1>
             <div className="row">       
 
@@ -90,15 +90,15 @@ class Airchina extends Component {
             </li>
 
             <li className="list-group-item">
-              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 601111</h6>
+              <h6>Lyhenne:&nbsp;&nbsp;&nbsp; 601111</h6>
             </li>
 
             <li className="list-group-item">
-              <h6>Pörssi:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sanghai Stock Exhange</h6>
+              <h6>Pörssi:&nbsp;&nbsp;&nbsp;&nbsp; Sanghai Stock Exhange</h6>
             </li>
 
             <li className="list-group-item">
-              <h6>Markkina arvo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 88 miljardia (USD)</h6>
+              <h6>Markkina arvo:&nbsp;&nbsp;&nbsp;&nbsp; 88 miljardia (USD)</h6>
             </li>
           </ul>
          </div>

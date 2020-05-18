@@ -60,7 +60,7 @@ class Volkswagen extends Component {
           <Navbartwo />
           <Categories/>
           <PercentageList />
-         <div className="container-fluid">
+         <div className="container-fluid leftAnimation">
            <h1 className="mt-5 mb-4">Volkswagen Group Osake (FRA: VOW3)</h1>
             <div className="row">       
 

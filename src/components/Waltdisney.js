@@ -61,7 +61,7 @@ class Waltdisney extends Component {
           <Navbartwo />
           <Categories/>
           <PercentageList />
-         <div className="container-fluid">
+         <div className="container-fluid leftAnimation">
            <h1 className="mt-5 mb-4">The Walt Disney Company osake (NYSE: DIS)</h1>
             <div className="row">       
 

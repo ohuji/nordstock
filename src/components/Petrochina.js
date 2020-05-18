@@ -60,7 +60,7 @@ class Petrochina extends Component {
           <Navbartwo />
           <Categories/>
           <PercentageList />
-         <div className="container-fluid">
+         <div className="container-fluid leftAnimation">
            <h1 className="mt-5 mb-4">PetroChina Osake (SHA: 601857)</h1>
             <div className="row">       
 
@@ -90,7 +90,7 @@ class Petrochina extends Component {
             </li>
 
             <li className="list-group-item">
-              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 601857</h6>
+              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp; 601857</h6>
             </li>
 
             <li className="list-group-item">

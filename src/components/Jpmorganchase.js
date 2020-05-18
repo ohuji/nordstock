@@ -60,7 +60,7 @@ class Jpmorganchase extends Component {
           <Navbartwo />
           <Categories/>
           <PercentageList />
-         <div className="container-fluid">
+         <div className="container-fluid leftAnimation">
            <h1 className="mt-5 mb-4">JP Morgan Chase Osake (NYSE: JPM)</h1>
             <div className="row">       
 
@@ -90,7 +90,7 @@ class Jpmorganchase extends Component {
             </li>
 
             <li className="list-group-item">
-              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JPM</h6>
+              <h6>Lyhenne:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JPM</h6>
             </li>
 
             <li className="list-group-item">

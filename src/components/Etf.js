@@ -54,7 +54,7 @@ class Etf extends Component {
           <Navbartwo />
           <Categories />
           <PercentageList />
-         <div className="container-fluid">    
+         <div className="container-fluid leftAnimation">    
          <h1 className="offset-md-0 mt-5 mb-5">Exchange-Traded funds (ETF)</h1>  
 
           <div className="row mt-5">
