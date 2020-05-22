@@ -5,37 +5,52 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 class Register extends Component {
-    state = {
-      users: []
+  constructor(props) {
+    super(props);
+
+    this.state = {
+        username: "",
+        password: "",
+        email: ""
+      
     }
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
    
     handleChange = (e) => {
       this.setState({ [e.target.id]: e.target.value })
+      console.log(this.state)
     }
 
     handleSubmit = (e) => {
-      e.prevent.default()
+      const {
+        email,
+        password,
+        username
+      } = this.state;
 
       fetch("/register", {
-        method: "POST",  
+        method: 'POST',  
         header: {
-         "Content-Type" : "application/json"            
+         'Accept': 'application/json',
+         'Content-Type' : 'application/json'            
         },
         body: JSON.stringify({
-        username: this.state.username,
-        password: this.state.password,
-        email: this.state.email   
+        username: username,
+        password: password,
+        email: email,   
+        insert: true
       })
     })
       .then(response => {
         return response.json();
       }) 
-      .then(data =>{
-        console.log(data);
-      })
       .catch(error => {
         console.log(error);
       })
+      console.log(this.state)
+      e.prevent.default()
     }
 
     render() {
@@ -58,6 +73,7 @@ class Register extends Component {
              onChange={this.handleChange}
              className="form-control mb-3" 
              placeholder="Käyttäjätunnus"
+             value={this.state.username}
              id="username"></input>
            </div>
            
@@ -67,6 +83,7 @@ class Register extends Component {
              </label>
              <input 
              onChange={this.handleChange}
+             value={this.state.email}
              className="form-control" 
              placeholder="Sähköposti"
              id="email"></input>
@@ -78,15 +95,15 @@ class Register extends Component {
              </label>
              <input 
              onChange={this.handleChange}
+             value={this.state.password}
              className="form-control" 
              placeholder="Salasana"
              id="password"></input>
            </div>
 
-           <button className="btn btn-primary btn-lg mt-3 mb-3">
+           <button type="submit" className="btn btn-primary btn-lg mt-3 mb-3">
               Luo ilmainen tili
            </button>
-
          </form>
         </div>
        </div>

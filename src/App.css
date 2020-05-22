@@ -38,7 +38,7 @@
 }
 
 nav {
-  background-color: #292b2c;
+  background-color: #111111;
   padding-top: 2px;
   color: #FFFFFF;
   height: 75px;
@@ -127,7 +127,7 @@ nav {
 }
 
 .site-footer{
-  background-color: #292b2c;
+  background-color: #111111;
   color: #FFFFFF;
   margin-top: 20px;
   padding-top: 20px;
@@ -168,7 +168,7 @@ nav {
 }
 
 .NavList {
-  background-color: #292b2c;
+  background-color: #111111;
   padding-right: 23px;
 }
 
@@ -178,5 +178,19 @@ nav {
 }
 
 @keyframes animateleft {
-  from{left:-300px;opacity:0}
+  from{left:-200px;opacity:0}
   to{left:0;opacity:1}}
+
+.carousel-inner {
+  max-height: 350px !important;
+  max-width: 650px !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+.carousel-indicators {
+  filter: invert(100%);
+}

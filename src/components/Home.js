@@ -23,7 +23,8 @@ import JpyLogo from "./../jpy.png";
 import EthereumLogo from "./../ETH.png";
 import RippleLogo from "./../Ripple.png";
 import GbpLogo from "./../gbp.png";
-import StockMarket from "./../stock-marke.png";
+import porssiFakta from "./../porssiFakta.png";
+import indeksiMuutos from "./../indeksiMuutos.png";
 
 const Home = () => {
     return(
@@ -36,36 +37,33 @@ const Home = () => {
 
           <div className="row mt-5">
            <div id="carouselIndicators" className="carousel slide offset-md-1" data-ride="carousel">
-            <ol className="carousel-indicators">
+            <ul className="carousel-indicators">
              <li data-target="#carouselIndicators" data-slide-to="0" className="active"></li>
              <li data-target="#carouselIndicators" data-slide-to="1"></li>
-            </ol>
+            </ul>
 
             <div className="carousel-inner">
              <div className="carousel-item active">
-
-             <Link to="/ArticleOne">
-              <img src={StockMarket} className="d-block w-100 h-50"></img>
-               <div className="carousel-caption d-none d-md-block">
-                <h3>Parhaita Sijoituksia Korona-aikoina</h3>
-                <p>Klikkaa Lukeaksesi Lisää</p>
-               </div>
-             </Link>
+           
+              <img src={indeksiMuutos} className="d-block w-100"></img>
              </div>
 
+             <div className="carousel-item">
+
+              <img src={porssiFakta} className="d-block w-100"></img>
+             </div>
           </div>
+
            <a className="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-             <span className="sr-only">Edellinen</span>
            </a>
 
           <a className="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="sr-only">Seuraava</span>
           </a>       
           </div>
 
-          <div className="card InfoCard offset-1"> 
+          <div className="card InfoCard offset-2"> 
 
                 <div className="card-body">
                  <h1 className="card-text">
@@ -73,8 +71,7 @@ const Home = () => {
                  </h1> 
                  <h4>
                     .. On luotu auttamaan ihmisiä sijoituksissaan.
-                    Täältä löytää reaaliaikaista dataa, sekä artikkelejä
-                    Liittyen finanssi maailmaan. 
+                    Täältä löytää reaaliaikaista dataa osakkeista 
                  </h4>          
                 </div>
                 
