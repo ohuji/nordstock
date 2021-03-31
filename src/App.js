@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Navbar from "./components/Navbar";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Footer from "./components/Footer"
 import Login from "./components/Login"
 import Register from "./components/Register"
@@ -15,17 +15,6 @@ import Sse from "./components/Sse";
 import Lse from "./components/Lse";
 import Etf from "./components/Etf";
 import Crypto from "./components/Crypto";
-import BerkshireHathaway from './components/BerkshireHathaway';
-import Alibaba from './components/Alibaba';
-import Jpmorganchase from './components/Jpmorganchase';
-import Visa from './components/Visa';
-import Exxonmobil from './components/Exxonmobil';
-import CocaCola from './components/CocaCola';
-import Walmart from './components/Walmart';
-import Waltdisney from './components/Waltdisney';
-import Oracle from './components/Oracle';
-import Mcdonalds from './components/Mcdonalds';
-import Bankofamerica from './components/Bankofamerica';
 import Amazon from './components/Amazon';
 import Tesla from './components/Tesla';
 import Alphabet from './components/Alphabet';
@@ -78,13 +67,15 @@ import Volkswagen from './components/Volkswagen';
 import Siemens from './components/Siemens';
 import Linde from './components/Linde';
 import Allianz from './components/Allianz';
+import Nysefirm from './components/Nysefirm';
 
-class App extends Component {
-  render() {
+const App = () => {
    return (
     <div className="App">  
      <BrowserRouter>
+     <Switch>
       <Route exact path="/" component={Home}/>
+      <Route path="/NYSE/:id" component={Nysefirm}/>
       <Route path="/login" component={Login}/>
       <Route path="/register" component={Register}/>
       <Route path="/AAPL" component={Apple}/>
@@ -96,17 +87,6 @@ class App extends Component {
       <Route path="/ETF" component={Etf}/>
       <Route path="/Crypto" component={Crypto}/>
       <Route path="/FRA" component={Fra}/>
-      <Route path="/BRK.A" component={BerkshireHathaway}/>
-      <Route path="/BABA" component={Alibaba}/>
-      <Route path="/JPM" component={Jpmorganchase}/>
-      <Route path="/V" component={Visa}/>
-      <Route path="/XOM" component={Exxonmobil}/>
-      <Route path="/KO" component={CocaCola}/>
-      <Route path="/WMT" component={Walmart}/>
-      <Route path="/DIS" component={Waltdisney}/>
-      <Route path="/ORCL" component={Oracle}/>
-      <Route path="/MCD" component={Mcdonalds}/>
-      <Route path="/BAC" component={Bankofamerica}/>
       <Route path="/AMZN" component={Amazon}/>
       <Route path="/TSLA" component={Tesla}/>
       <Route path="/GOOGL" component={Alphabet}/>
@@ -158,10 +138,10 @@ class App extends Component {
       <Route path="/FRASIE" component={Siemens}/>
       <Route path="/FRALIN" component={Linde}/>
       <Route path="/FRAALV" component={Allianz}/>
+      </Switch>
      </BrowserRouter>
    </div>
   )
-  }
 }
 
 export default App;
