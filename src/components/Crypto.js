@@ -4,7 +4,7 @@ import Navbartwo from "./Navbartwo";
 import Categories from "./Categories";
 import PercentageList from "./PercentageList";
 import Footer from "./Footer";
-import cryptoLogo from "./../crypto.png";
+import cryptoLogo from "./../images/crypto.png";
 import { Link } from "react-router-dom";
 
 class Crypto extends Component {

@@ -4,7 +4,7 @@ import Navbartwo from "./Navbartwo";
 import Categories from "./Categories";
 import PercentageList from "./PercentageList";
 import Footer from "./Footer";
-import nasdaqLogo from "./../nasdaqLogo.png";
+import nasdaqLogo from "./../images/nasdaqLogo.png";
 import { Link } from "react-router-dom";
 
 class Nasdaq extends Component {

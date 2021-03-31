@@ -4,7 +4,7 @@ import Navbartwo from "./Navbartwo";
 import Categories from "./Categories";
 import PercentageList from "./PercentageList";
 import Footer from "./Footer";
-import nyseLogo from "./../nysee.png";
+import nyseLogo from "./../images/nysee.png";
 import { Link } from "react-router-dom";
 
 class Nyse extends Component {
@@ -39,11 +39,11 @@ class Nyse extends Component {
     const companyList = companies.length ? (
       companies.map((company) => {
         return(   
-              <li key={company.id} className="list-group-item list-group-item-action">
-                <Link to={"/"+company.short} className="linkSize Link">
-                 {company.name+" ("+company.short+")"}
-                </Link>
-              </li>
+          <li key={company.id} className="list-group-item list-group-item-action">  
+              <Link to={"/"+company.short} className="linkSize Link"> 
+                 {company.name+" ("+company.short+")"}               
+              </Link>             
+          </li>
         )
       }) 
     ) : (

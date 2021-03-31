@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "./../App.css";
-import Image from "./../nystock.png";
-import Imagetwo from "./../2018f.png";
-import Imagethree from "./../btcpic.png";
-import Imagefour from "./../best_investment_broker.png";
-import Imagefive from "./../Best-stock-broker-2018.png";
+import Image from "./../images/nystock.png";
+import Imagetwo from "./../images/2018f.png";
+import Imagethree from "./../images/btcpic.png";
+import Imagefour from "./../images/best_investment_broker.png";
+import Imagefive from "./../images/Best-stock-broker-2018.png";
 import { Link } from "react-router-dom";
 
 

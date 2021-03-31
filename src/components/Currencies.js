@@ -4,7 +4,7 @@ import Navbartwo from "./Navbartwo";
 import Categories from "./Categories";
 import PercentageList from "./PercentageList";
 import Footer from "./Footer";
-import currencyLogo from "./../currenciesPic.png";
+import currencyLogo from "./../images/currenciesPic.png";
 import { Link } from "react-router-dom";
 
 class Currencies extends Component {

@@ -4,7 +4,7 @@ import Navbartwo from "./Navbartwo";
 import Categories from "./Categories";
 import PercentageList from "./PercentageList";
 import Footer from "./Footer";
-import fraLogo from "./../Frankfurtexhange.png";
+import fraLogo from "./../images/Frankfurtexhange.png";
 import { Link } from "react-router-dom";
 
 class Fra extends Component {

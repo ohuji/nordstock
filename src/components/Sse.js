@@ -4,7 +4,7 @@ import Navbartwo from "./Navbartwo";
 import Categories from "./Categories";
 import PercentageList from "./PercentageList";
 import Footer from "./Footer";
-import sseLogo from "./../sseLogo.png";
+import sseLogo from "./../images/sseLogo.png";
 import { Link } from "react-router-dom";
 
 class Sse extends Component {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './../App.css';
-import GithubLogo from "./../GitHub-Mark-Light-64px.png"
+import GithubLogo from "./../images/GitHub-Mark-Light-64px.png"
 
 const Footer = () => {
     return(

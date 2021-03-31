@@ -4,7 +4,7 @@ import Navbartwo from "./Navbartwo";
 import Categories from "./Categories";
 import PercentageList from "./PercentageList";
 import Footer from "./Footer";
-import etfLogo from "./../etf.png";
+import etfLogo from "./../images/etf.png";
 import { Link } from "react-router-dom";
 
 class Etf extends Component {

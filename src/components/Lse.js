@@ -4,7 +4,7 @@ import Navbartwo from "./Navbartwo";
 import Categories from "./Categories";
 import PercentageList from "./PercentageList";
 import Footer from "./Footer";
-import lseLogo from "./../lseLogo.png";
+import lseLogo from "./../images/lseLogo.png";
 import { Link } from "react-router-dom";
 
 class Lse extends Component {
