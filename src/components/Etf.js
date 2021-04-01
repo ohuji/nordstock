@@ -38,7 +38,7 @@ class Etf extends Component {
       etfs.map((etf) => {
         return(   
               <li key={etf.id} className="list-group-item list-group-item-action">
-                <Link to={"/"+etf.short} className="linkSize Link">
+                <Link to={`/ETF/${etf.short}`} className="linkSize Link">
                  {etf.name+" ("+etf.short+")"}
                 </Link>
               </li>

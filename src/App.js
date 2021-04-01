@@ -14,13 +14,6 @@ import Sse from "./components/Sse";
 import Lse from "./components/Lse";
 import Etf from "./components/Etf";
 import Crypto from "./components/Crypto";
-import Spy from './components/Spy';
-import Dia from './components/Dia';
-import Voo from './components/Voo';
-import Schd from './components/Schd';
-import Qqq from './components/Qqq';
-import Gld from './components/Gld';
-import Vti from './components/Vti';
 import Bitcoin from './components/Bitcoin';
 import Ethereum from './components/Ethereum';
 import Ripple from './components/Ripple';
@@ -42,6 +35,7 @@ import Nysefirm from './components/Nysefirm';
 import Nasdaqfirm from './components/Nasdaqfirm';
 import Currency from './components/Currency';
 import Ssefirm from './components/Ssefirm';
+import Etffund from './components/Etffund';
 
 const App = () => {
    return (
@@ -53,6 +47,7 @@ const App = () => {
       <Route path="/Nasdaq/:id" component={Nasdaqfirm}/>
       <Route path="/Sse/:id" component={Ssefirm}/>
       <Route path="/Currencies/:id" component={Currency}/>
+      <Route path="/ETF/:id" component={Etffund}/>
       <Route path="/login" component={Login}/>
       <Route path="/register" component={Register}/>
       <Route path="/NYSE" component={Nyse}/>
@@ -63,13 +58,6 @@ const App = () => {
       <Route path="/ETF" component={Etf}/>
       <Route path="/Crypto" component={Crypto}/>
       <Route path="/FRA" component={Fra}/>
-      <Route path="/SPY" component={Spy}/>
-      <Route path="/DIA" component={Dia}/>
-      <Route path="/VOO" component={Voo}/>
-      <Route path="/SCHD" component={Schd}/>
-      <Route path="/QQQ" component={Qqq}/>
-      <Route path="/GLD" component={Gld}/>
-      <Route path="/VTI" component={Vti}/>
       <Route path="/BTC" component={Bitcoin}/>
       <Route path="/ETH" component={Ethereum}/>
       <Route path="/XRP" component={Ripple}/>
