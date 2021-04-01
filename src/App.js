@@ -7,7 +7,6 @@ import Footer from "./components/Footer"
 import Login from "./components/Login"
 import Register from "./components/Register"
 import Home from "./components/Home";
-import Apple from "./components/Apple";
 import Nyse from './components/Nyse';
 import Nasdaq from "./components/Nasdaq";
 import Currencies from "./components/Currencies";
@@ -15,34 +14,6 @@ import Sse from "./components/Sse";
 import Lse from "./components/Lse";
 import Etf from "./components/Etf";
 import Crypto from "./components/Crypto";
-import Amazon from './components/Amazon';
-import Tesla from './components/Tesla';
-import Alphabet from './components/Alphabet';
-import Nvidia from './components/Nvidia';
-import Blizzard from './components/Blizzard';
-import Facebook from './components/Facebook';
-import Intel from './components/Intel';
-import Microsoft from './components/Microsoft';
-import Amd from './components/Amd';
-import Ebay from './components/Ebay';
-import Netflix from './components/Netflix';
-import Euro from './components/Euro';
-import Usd from './components/Usd';
-import Yen from './components/Yen';
-import Gbp from './components/Gbp';
-import Franc from './components/Franc';
-import Cad from './components/Cad';
-import Zar from './components/Zar';
-import Sek from './components/Sek';
-import Nzd from './components/Nzd';
-import Aud from './components/Aud';
-import Hkd from './components/Hkd';
-import Airchina from './components/Airchina';
-import Bankofbeijing from './components/Bankofbeijing';
-import Zijing from './components/Zijing';
-import Wanhua from './components/Wanhua';
-import Bankofsanghai from './components/Bankofsanghai';
-import Petrochina from './components/Petrochina';
 import Spy from './components/Spy';
 import Dia from './components/Dia';
 import Voo from './components/Voo';
@@ -68,6 +39,9 @@ import Siemens from './components/Siemens';
 import Linde from './components/Linde';
 import Allianz from './components/Allianz';
 import Nysefirm from './components/Nysefirm';
+import Nasdaqfirm from './components/Nasdaqfirm';
+import Currency from './components/Currency';
+import Ssefirm from './components/Ssefirm';
 
 const App = () => {
    return (
@@ -76,9 +50,11 @@ const App = () => {
      <Switch>
       <Route exact path="/" component={Home}/>
       <Route path="/NYSE/:id" component={Nysefirm}/>
+      <Route path="/Nasdaq/:id" component={Nasdaqfirm}/>
+      <Route path="/Sse/:id" component={Ssefirm}/>
+      <Route path="/Currencies/:id" component={Currency}/>
       <Route path="/login" component={Login}/>
       <Route path="/register" component={Register}/>
-      <Route path="/AAPL" component={Apple}/>
       <Route path="/NYSE" component={Nyse}/>
       <Route path="/Nasdaq" component={Nasdaq}/>
       <Route path="/Currencies" component={Currencies}/>
@@ -87,34 +63,6 @@ const App = () => {
       <Route path="/ETF" component={Etf}/>
       <Route path="/Crypto" component={Crypto}/>
       <Route path="/FRA" component={Fra}/>
-      <Route path="/AMZN" component={Amazon}/>
-      <Route path="/TSLA" component={Tesla}/>
-      <Route path="/GOOGL" component={Alphabet}/>
-      <Route path="/NVDA" component={Nvidia}/>
-      <Route path="/ATVI" component={Blizzard}/>
-      <Route path="/FB" component={Facebook}/>
-      <Route path="/INTC" component={Intel}/>
-      <Route path="/MSFT" component={Microsoft}/>
-      <Route path="/AMD" component={Amd}/>
-      <Route path="/EBAY" component={Ebay}/>
-      <Route path="/NFLX" component={Netflix}/>
-      <Route path="/EUR" component={Euro}/>
-      <Route path="/USD" component={Usd}/>
-      <Route path="/JPY" component={Yen}/>
-      <Route path="/GBP" component={Gbp}/>
-      <Route path="/CHF" component={Franc}/>
-      <Route path="/CAD" component={Cad}/>
-      <Route path="/ZAR" component={Zar}/>
-      <Route path="/SEK" component={Sek}/>
-      <Route path="/NZD" component={Nzd}/>
-      <Route path="/AUD" component={Aud}/>
-      <Route path="/HKD" component={Hkd}/>
-      <Route path="/SHA601111" component={Airchina}/>
-      <Route path="/SHA601169" component={Bankofbeijing}/>
-      <Route path="/SHA601899" component={Zijing}/>
-      <Route path="/SHA600309" component={Wanhua}/>
-      <Route path="/SHA601229" component={Bankofsanghai}/>
-      <Route path="/SHA601857" component={Petrochina}/>
       <Route path="/SPY" component={Spy}/>
       <Route path="/DIA" component={Dia}/>
       <Route path="/VOO" component={Voo}/>
