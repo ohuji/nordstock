@@ -40,7 +40,7 @@ class Fra extends Component {
       companies.map((company) => {
         return(   
               <li key={company.id} className="list-group-item list-group-item-action">
-                <Link to={"/"+company.short} className="linkSize Link">
+                <Link to={`/FRA/${company.short}`} className="linkSize Link">
                  {company.name+" ("+company.short+")"}
                 </Link>
               </li>

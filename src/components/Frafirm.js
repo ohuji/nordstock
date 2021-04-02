@@ -10,7 +10,7 @@ import { useParams } from "react-router-dom";
 
 const Plot = createPlotlyComponent(Plotly);
 
-const Crypto = () => {
+const Frafirm = () => {
 
     const [axis, setAxis] = useState({
         Xaxis: [],
@@ -18,21 +18,21 @@ const Crypto = () => {
     });
 
     const [state, setState] = useState({
-        currencies: []
+        companies: []
     });
 
     const id = useParams().id;
 
-    //Get all currencies for filtering
+    //Get all Franfurt Stock Exhange companies for filtering
 
     useEffect(() => {
-        fetch("/crypto/") 
+        fetch("/fra/") 
         .then(response => {
           return response.json()
         })
     
         .then(response => {
-          setState({ currencies: response.data })
+          setState({ companies: response.data })
         })
     
         .catch(error => {
@@ -41,7 +41,7 @@ const Crypto = () => {
 
     }, []);
 
-    /*Get currency information from api, based on param id and then
+    /*Get stock information from api, based on param id and then
     set that data into y and x axis (Daily opening share data in Y and
     dates in X)
     */
@@ -49,14 +49,14 @@ const Crypto = () => {
         let Yvalue = [];
         let Xvalue = [];
 
-       fetch(`https://www.alphavantage.co/query?function=DIGITAL_CURRENCY_DAILY&symbol=${id}&market=EUR&apikey=WF9H64N6MXWBW9AJ`)
+       fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=FRA:${id}&apikey=WF9H64N6MXWBW9AJ`)
        .then(response => {
            return response.json();
        })
 
        .then(data => {
-            for (let key in data["Time Series (Digital Currency Daily)"]) {
-                Yvalue.push(data["Time Series (Digital Currency Daily)"][key]["1a. open (EUR)"]);
+            for (let key in data["Time Series (Daily)"]) {
+                Yvalue.push(data["Time Series (Daily)"][key]["1. open"]);
                 Xvalue.push(key);
             }
        
@@ -74,38 +74,38 @@ const Crypto = () => {
     }, []); 
     
     /*Couple of filters (header and sideinfo seperatly)
-    for filtering fetched currencies of the one of which 
-    currency code (called short in db) matches the url id/code and
-    then mapping that filtered currency.
+    for filtering fetched companies of the one of which 
+    stock code (called short in db) matches the url id/code and
+    then mapping that filtered firm.
     */
 
-    const headerInfo = state.currencies.filter(currency => currency.short === id).map(filteredCurrency => (
-        <h1 key={filteredCurrency.short} className="mt-5 mb-4">
-            {filteredCurrency.name} ({filteredCurrency.short})
+    const headerInfo = state.companies.filter(company => company.short === id).map(filteredCompany => (
+        <h1 key={filteredCompany.short} className="mt-5 mb-4">
+            {filteredCompany.name} Osake (FRA: {filteredCompany.short})
         </h1>
     ));   
 
 
-    const info = state.currencies.filter(currency => currency.short === id).map(filteredCurrency => (
-        <ul key={filteredCurrency.short} className="list-group list-group-flush mt-5">
+    const info = state.companies.filter(company => company.short === id).map(filteredCompany => (
+        <ul key={filteredCompany.short} className="list-group list-group-flush mt-5">
             <li className="list-group-item">
-                <h5>Informaatiota Cryptovaluutasta</h5>
+                <h5>Informaatiota Osakkeesta</h5>
             </li>
 
             <li className="list-group-item">
-                <h6>Nimi: {filteredCurrency.name}</h6>
+                <h6>Nimi: {filteredCompany.name}</h6>
             </li>
 
             <li className="list-group-item">
-                <h6>Lyhenne: {filteredCurrency.short}</h6>
+                <h6>Lyhenne: {filteredCompany.short}</h6>
             </li>
 
             <li className="list-group-item">
-                <h6>Julkaisuvuosi: {filteredCurrency.releaseyear}</h6>
+                <h6>Pörssi: Frankfurt Stock Exhange</h6>
             </li>
 
             <li className="list-group-item">
-                <h6>Blockchain metodi: {filteredCurrency.blockchain}</h6>
+                <h6>Markkina arvo: {filteredCompany.marketcap}</h6>
             </li>
         </ul>
     ));
@@ -149,4 +149,4 @@ const Crypto = () => {
     
 }
 
-export default Crypto;
+export default Frafirm;

@@ -48,7 +48,7 @@ const Categories = () => {
       </li>
 
       <li className="list-group-item NavList rounded-0">
-        <Link className="NavLink" to="/Crypto">
+        <Link className="NavLink" to="/Cryptocurrencies">
         <h5 className="linkSize">
           &nbsp;Cryptovaluutat&nbsp;
         </h5>
