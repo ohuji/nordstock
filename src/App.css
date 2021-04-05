@@ -124,6 +124,7 @@ nav {
 
 .InfoCard {
   width: 30rem;
+  box-shadow: -1px 2px 8px 1px rgba(0,0,0,0.27);
 }
 
 .site-footer{
@@ -170,6 +171,7 @@ nav {
 .NavList {
   background-color: #111111;
   padding-right: 23px;
+  box-shadow: -1px 9px 8px -2px rgba(17,17,17,0.27);
 }
 
 .leftAnimation {
@@ -193,4 +195,8 @@ nav {
 
 .carousel-indicators {
   filter: invert(100%);
+}
+
+.carousel {
+  box-shadow: -1px 2px 8px 1px rgba(0,0,0,0.27);
 }
