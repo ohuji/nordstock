@@ -11,6 +11,8 @@ class SpyNav extends Component {
         this.getData();
     }
 
+    //Fetch opening values from api and store in state
+
     getData = () => {   
         const pointer = this;
 
@@ -37,6 +39,14 @@ class SpyNav extends Component {
     }
 
     render() {
+
+        /* If there has been increase in value from yesterday,
+            calculate and show increase percentage. If todays stock opening data
+            equals yesterdays data just print 0%. 
+            Else (decrease in value from yesterday) calculate and show
+            decreased percentage.
+        */
+
         const { stockData } = this.state;
 
         if (stockData[0] > stockData[1]) {
@@ -47,19 +57,21 @@ class SpyNav extends Component {
 
             return(
                 <div className="list-group-item NavList rounded-0">
-                 <Link className="NavLink" to="/SPY">
-                  <h5 className="linkSize">SPY S&P 500</h5>
-                  </Link>
-                  <h5 className="text-success">+{increasedPercentage}%</h5>
+                    <Link className="NavLink" to="/SPY">
+                        <h5 className="linkSize">SPY S&P 500</h5>
+                    </Link>
+
+                    <h5 className="text-success">+{increasedPercentage}%</h5>
                 </div>
             )
         } else if (stockData[0] === stockData[1]) {        
             return(
                 <div className="list-group-item NavList rounded-0">
-                 <Link className="NavLink" to="SPY"> 
-                  <h5 className="linkSize">SPY S&P 500</h5>
-                  </Link>  
-                  <h5 className="text-warning">0.00%</h5>
+                    <Link className="NavLink" to="SPY"> 
+                        <h5 className="linkSize">SPY S&P 500</h5>
+                    </Link>  
+
+                    <h5 className="text-warning">0.00%</h5>
                 </div>
             )
         } else {
@@ -70,10 +82,11 @@ class SpyNav extends Component {
 
             return(
                 <div className="list-group-item NavList rounded-0">
-                 <Link className="NavLink" to="SPY"> 
-                  <h5 className="linkSize">SPY S&P 500</h5>
-                  </Link>  
-                  <h5 className="text-danger">-{decreasedPercentage}%</h5>
+                    <Link className="NavLink" to="SPY"> 
+                        <h5 className="linkSize">SPY S&P 500</h5>
+                    </Link>  
+                    
+                    <h5 className="text-danger">-{decreasedPercentage}%</h5>
                 </div>
             )
         }
