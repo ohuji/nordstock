@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./../App.css";
-import Navbartwo from "./Navbartwo";
+import Navbar from "./Navbar";
 import Categories from "./Categories";
 import PercentageList from "./PercentageList";
 import Footer from "./Footer";
@@ -36,12 +36,12 @@ class Cryptocurrencies extends Component {
 
     const currencyList = currencies.length ? (
       currencies.map((currency) => {
-        return(   
-              <li key={currency.id} className="list-group-item list-group-item-action">
-                <Link to={`/Cryptocurrencies/${currency.short}`} className="linkSize Link">
-                 {currency.name+" ("+currency.short+")"}
-                </Link>
-              </li>
+        return(  
+          <Link to={`/CRYPTO/${currency.short}`} key={currency.id} className="linkSize Link">
+            <li className="list-group-item list-group-item-action firm-list Link">
+              {currency.name+" ("+currency.short+")"}
+            </li>
+          </Link>
         )
       }) 
     ) : (
@@ -51,7 +51,7 @@ class Cryptocurrencies extends Component {
     )
     return(
         <div className="background">
-          <Navbartwo />
+          <Navbar />
           <Categories />
           <PercentageList />
          <div className="container-fluid leftAnimation">    

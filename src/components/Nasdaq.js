@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./../App.css";
-import Navbartwo from "./Navbartwo";
+import Navbar from "./Navbar";
 import Categories from "./Categories";
 import PercentageList from "./PercentageList";
 import Footer from "./Footer";
@@ -39,11 +39,11 @@ class Nasdaq extends Component {
     const companyList = companies.length ? (
       companies.map((company) => {
         return(   
-              <li key={company.id} className="list-group-item list-group-item-action">
-                <Link to={`/Nasdaq/${company.short}`} className="linkSize Link">
-                 {company.name+" ("+company.short+")"}
-                </Link>
-              </li>
+          <Link to={`/NASDAQ/${company.short}`} key={company.id} className="linkSize Link">
+            <li className="list-group-item list-group-item-action firm-list Link">
+                {company.name+" ("+company.short+")"}
+            </li>
+          </Link>
         )
       }) 
     ) : (
@@ -53,7 +53,7 @@ class Nasdaq extends Component {
     )
     return(
         <div className="background">
-          <Navbartwo />
+          <Navbar />
           <Categories />
           <PercentageList />
          <div className="container-fluid leftAnimation">    
@@ -63,11 +63,11 @@ class Nasdaq extends Component {
             <img src={nasdaqLogo} className="image-fluid offset-md-1"></img>
 
             <ul className="list-group col-md-4 offset-md-2 mb-5">
-            <div className="DateBackground mb-5 rounded-pill">  
-            <h6 className="mt-3">Nasdaq on auki 4:30 - 11:00 (UTC +3) välisenä aikana</h6>
-            <h6>Tämän hetkinen päivänmäärä ja kellon aikasi on:</h6>
-            <h5 className="mb-3">{time}</h5>
-            </div>
+              <div className="DateBackground mb-5 rounded-pill">  
+                <h6 className="mt-3">Nasdaq on auki 4:30 - 11:00 (UTC +3) välisenä aikana</h6>
+                <h6>Tämän hetkinen päivänmäärä ja kellon aikasi on:</h6>
+                <h5 className="mb-3">{time}</h5>
+              </div>
             
             <h3 className="mb-3">Osakkeet:</h3>
              {companyList}

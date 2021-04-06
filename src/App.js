@@ -1,11 +1,6 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import Navbar from "./components/Navbar";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Footer from "./components/Footer"
-import Login from "./components/Login"
-import Register from "./components/Register"
 import Home from "./components/Home";
 import Nyse from './components/Nyse';
 import Nasdaq from "./components/Nasdaq";
@@ -31,24 +26,22 @@ const App = () => {
      <Switch>
       <Route exact path="/" component={Home}/>
       <Route path="/NYSE/:id" component={Nysefirm}/>
-      <Route path="/Nasdaq/:id" component={Nasdaqfirm}/>
+      <Route path="/NASDAQ/:id" component={Nasdaqfirm}/>
       <Route path="/Sse/:id" component={Ssefirm}/>
-      <Route path="/Currencies/:id" component={Currency}/>
-      <Route path="/Cryptocurrencies/:id" component={Crypto}/>
+      <Route path="/CURRENCY/:id" component={Currency}/>
+      <Route path="/CRYPTO/:id" component={Crypto}/>
       <Route path="/ETF/:id" component={Etffund}/>
       <Route path="/LSE/:id" component={Lsefirm}/>
       <Route path="/FRA/:id" component={Frafirm}/>
-      <Route path="/login" component={Login}/>
-      <Route path="/register" component={Register}/>
       <Route path="/NYSE" component={Nyse}/>
-      <Route path="/Nasdaq" component={Nasdaq}/>
-      <Route path="/Currencies" component={Currencies}/>
-      <Route path="/Sse" component={Sse}/>
+      <Route path="/NASDAQ" component={Nasdaq}/>
+      <Route path="/CURRENCY" component={Currencies}/>
+      <Route path="/SSE" component={Sse}/>
       <Route path="/LSE" component={Lse}/>
       <Route path="/ETF" component={Etf}/>
-      <Route path="/Cryptocurrencies" component={Cryptocurrencies}/>
+      <Route path="/CRYPTO" component={Cryptocurrencies}/>
       <Route path="/FRA" component={Fra}/>
-      </Switch>
+     </Switch>
      </BrowserRouter>
    </div>
   )

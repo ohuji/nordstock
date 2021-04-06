@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./../App.css";
-import Navbartwo from "./Navbartwo";
+import Navbar from "./Navbar";
 import Categories from "./Categories";
 import PercentageList from "./PercentageList";
 import Footer from "./Footer";
@@ -37,11 +37,11 @@ class Etf extends Component {
     const etfList = etfs.length ? (
       etfs.map((etf) => {
         return(   
-              <li key={etf.id} className="list-group-item list-group-item-action">
-                <Link to={`/ETF/${etf.short}`} className="linkSize Link">
-                 {etf.name+" ("+etf.short+")"}
-                </Link>
-              </li>
+          <Link to={`/ETF/${etf.short}`} key={etf.id} className="linkSize Link">
+            <li className="list-group-item list-group-item-action firm-list Link">
+              {etf.name+" ("+etf.short+")"}   
+            </li>
+          </Link>
         )
       }) 
     ) : (
@@ -51,7 +51,7 @@ class Etf extends Component {
     )
     return(
         <div className="background">
-          <Navbartwo />
+          <Navbar />
           <Categories />
           <PercentageList />
          <div className="container-fluid leftAnimation">    

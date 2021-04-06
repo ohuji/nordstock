@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./../App.css";
-import Navbartwo from "./Navbartwo";
+import Navbar from "./Navbar";
 import Categories from "./Categories";
 import PercentageList from "./PercentageList";
 import Footer from "./Footer";
@@ -39,11 +39,11 @@ class Fra extends Component {
     const companyList = companies.length ? (
       companies.map((company) => {
         return(   
-              <li key={company.id} className="list-group-item list-group-item-action">
-                <Link to={`/FRA/${company.short}`} className="linkSize Link">
-                 {company.name+" ("+company.short+")"}
-                </Link>
-              </li>
+          <Link to={`/FRA/${company.short}`} key={company.id} className="linkSize Link">
+            <li className="list-group-item list-group-item-action firm-list Link">
+              {company.name+" ("+company.short+")"}
+            </li>
+          </Link>
         )
       }) 
     ) : (
@@ -53,7 +53,7 @@ class Fra extends Component {
     )
     return(
         <div className="background">
-          <Navbartwo />
+          <Navbar />
           <Categories />
           <PercentageList />
          <div className="container-fluid leftAnimation">    
@@ -64,11 +64,11 @@ class Fra extends Component {
 
             <ul className="list-group col-md-4 offset-md-2 mb-5">
 
-            <div className="DateBackground mb-5 rounded-pill">  
-            <h6 className="mt-3">Franfurtin pörssi on auki 10:00 - 18:30 (UTC +3) välisenä aikana</h6>
-            <h6>Tämän hetkinen päivänmäärä ja kellon aikasi on:</h6>
-            <h5 className="mb-3">{time}</h5>
-            </div>
+              <div className="DateBackground mb-5 rounded-pill">  
+                <h6 className="mt-3">Franfurtin pörssi on auki 10:00 - 18:30 (UTC +3) välisenä aikana</h6>
+                <h6>Tämän hetkinen päivänmäärä ja kellon aikasi on:</h6>
+                <h5 className="mb-3">{time}</h5>
+              </div>
 
             <h3 className="mb-3">Osakkeet:</h3>
              {companyList}

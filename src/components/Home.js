@@ -1,7 +1,6 @@
 import React from "react";
 import "./../App.css";
-import { Link } from "react-router-dom";
-import Navbartwo from "./Navbartwo";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Categories from "./Categories";
 import AppleLogo from "./../images/Apple_logo.png";
@@ -30,7 +29,7 @@ import HomeCard from "./HomeCard";
 const Home = () => {
     return(
         <div className="background">
-         <Navbartwo/>
+         <Navbar/>
          <Categories />
          <PercentageList />      
 
@@ -80,13 +79,13 @@ const Home = () => {
             <h3 className="mt-5 mb-4">Suositut kohteessa: Osakkeet</h3>
 
            <div className="row offset-md-1"> 
-                <HomeCard name="Apple (AAPL)" img={AppleLogo} link="/Nasdaq/AAPL"/>
-                <HomeCard name="Amazon (AMZN)" img={AmazonLogo} link="/Nasdaq/AMZN"/>
-                <HomeCard name="Air China (601111)" img={AirChinaLogo} link="/Sse/601111"/>
+                <HomeCard name="Apple (AAPL)" img={AppleLogo} link="/NASDAQ/AAPL"/>
+                <HomeCard name="Amazon (AMZN)" img={AmazonLogo} link="/NASDAQ/AMZN"/>
+                <HomeCard name="Air China (601111)" img={AirChinaLogo} link="/SSE/601111"/>
                 <HomeCard name="JP Morgan Chase (JPM)" img={JPMorganLogo} link="/NYSE/JPM"/>
-                <HomeCard name="Tesla (TSLA)" img={TeslaLogo} link="/Nasdaq/TSLA"/>
-                <HomeCard name="Alphabet Inc (GOOG)" img={AlphabetLogo} link="/Nasdaq/GOOG"/>
-                <HomeCard name="Nvidia (NVDA)" img={NvidiaLogo} link="/Nasdaq/NVDA"/>
+                <HomeCard name="Tesla (TSLA)" img={TeslaLogo} link="/NASDAQ/TSLA"/>
+                <HomeCard name="Alphabet Inc (GOOG)" img={AlphabetLogo} link="/NASDAQ/GOOG"/>
+                <HomeCard name="Nvidia (NVDA)" img={NvidiaLogo} link="/NASDAQ/NVDA"/>
            </div>
 
              <h3 className="mt-5 mb-4">Suositut kohteessa: Exhange-Traded Funds (ETF)</h3>
@@ -104,13 +103,13 @@ const Home = () => {
              <h3 className="mt-5 mb-4">Suositut kohteessa: Cryptot ja valuutat</h3>
 
              <div className="row offset-md-1 mb-5">                
-                <HomeCard name="Euro (EUR)" img={EuroLogo} link="/Currencies/EUR"/>
-                <HomeCard name="Bitcoin (BTC)" img={BitcoinLogo} link="/Cryptocurrencies/BTC"/>
-                <HomeCard name="United States Dollar (USD)" img={UsdLogo} link="/Currencies/USD"/>
-                <HomeCard name="Japanese Yen (JPY)" img={JpyLogo} link="/Currencies/JPY"/>
-                <HomeCard name="Ethereum (ETH)" img={EthereumLogo} link="/Cryptocurrencies/ETH"/>
-                <HomeCard name="Ripple (XRP)" img={RippleLogo} link="/Cryptocurrencies/XRP"/>
-                <HomeCard name="Great British Pound (GBP)" img={GbpLogo} link="/Currencies/GBP"/>
+                <HomeCard name="Euro (EUR)" img={EuroLogo} link="/CURRENCY/EUR"/>
+                <HomeCard name="Bitcoin (BTC)" img={BitcoinLogo} link="/CRYPTO/BTC"/>
+                <HomeCard name="United States Dollar (USD)" img={UsdLogo} link="/CURRENCY/USD"/>
+                <HomeCard name="Japanese Yen (JPY)" img={JpyLogo} link="/CURRENCY/JPY"/>
+                <HomeCard name="Ethereum (ETH)" img={EthereumLogo} link="/CRYPTO/ETH"/>
+                <HomeCard name="Ripple (XRP)" img={RippleLogo} link="/CRYPTO/XRP"/>
+                <HomeCard name="Great British Pound (GBP)" img={GbpLogo} link="/CURRENCY/GBP"/>
              </div>
                
         </div> 

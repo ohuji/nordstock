@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Plotly from "plotly.js-basic-dist";
 import createPlotlyComponent from "react-plotly.js/factory";
 import Footer from "./Footer";
-import Navbartwo from "./Navbartwo";
+import Navbar from "./Navbar";
 import Categories from "./Categories";
 import "./../App.css";
 import PercentageList from "./PercentageList";
@@ -87,7 +87,7 @@ const Currency = () => {
 
 
     const info = state.currencies.filter(currency => currency.short === id).map(filteredCurrency => (
-        <ul key={filteredCurrency.short} className="list-group list-group-flush mt-5">
+        <ul key={filteredCurrency.short} className="list-group list-group-flush mt-5 firm-info">
             <li className="list-group-item">
                 <h5>Informaatiota Valuutasta</h5>
             </li>
@@ -108,7 +108,7 @@ const Currency = () => {
 
     return(
         <div className="background">     
-            <Navbartwo/>
+            <Navbar/>
             <Categories/>
             <PercentageList/>
 
@@ -117,13 +117,13 @@ const Currency = () => {
 
                 <div className="row">       
                     <Plot
-                        className="mb-4 offset-md-1"
+                        className="mb-4 offset-md-1 chart"
                         data={[{
                             x: axis.Xaxis,
                             y: axis.Yaxis,
                             type: 'scatter',
                             mode: 'lines+markers',
-                            marker: {color: 'black'},
+                            marker: {color: '#17BECF'},
                         },
                         ]}
                     layout={{width: 1050, height: 706}}/>    

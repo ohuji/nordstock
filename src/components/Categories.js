@@ -16,7 +16,7 @@ const Categories = () => {
       </li>
 
       <li className="list-group-item NavList rounded-0">
-        <Link className="NavLink" to="/Nasdaq">
+        <Link className="NavLink" to="/NASDAQ">
         <h5 className="linkSize">
           &nbsp;Nasdaq Stock Exhange (Nasdaq)&nbsp;
         </h5>
@@ -24,7 +24,7 @@ const Categories = () => {
       </li>
 
       <li className="list-group-item NavList rounded-0">
-        <Link className="NavLink" to="/Currencies">
+        <Link className="NavLink" to="/CURRENCY">
         <h5 className="linkSize">
           &nbsp;Valuutat&nbsp;
         </h5>
@@ -48,7 +48,7 @@ const Categories = () => {
       </li>
 
       <li className="list-group-item NavList rounded-0">
-        <Link className="NavLink" to="/Cryptocurrencies">
+        <Link className="NavLink" to="/CRYPTO">
         <h5 className="linkSize">
           &nbsp;Cryptovaluutat&nbsp;
         </h5>
