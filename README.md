@@ -1,7 +1,5 @@
 # NordStock
 
-## About
-
 Nordstock is a fun little web project I made for viewing daily stock data.<br />
 I used MySql for database, AlphaVantage for stock API, React for frontend and Express for backend.
 
